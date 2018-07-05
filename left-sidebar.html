@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="plugins/nouislider/nouislider.css">
+    <link rel="stylesheet" href="css/components/left-sidebar.css">
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div class="main-container">
+            <div class="container-fluid limited">
+                <div class="row">
+                      
+                    <div class="col-lg-3 col-md-4 page-sidebar mobile-filter-sidebar">
+                        <aside>
+                            <div class="inner-box">
+                                <div class="filter-sidebar">
+                                  <h5 class="list-title"><strong><a href="#">Categories</a></strong></h5>
+                                  <div class="list-group list-group-collapse list-group-sm list-group-tree" id="list-group-men" data-children=".sub-men">
+                                    <div class="list-group-collapse sub-men">
+                                      <a class="list-group-item list-group-item-action collapsed" href="#sub-men1" data-toggle="collapse" aria-expanded="false" aria-controls="sub-men1">Clothing <small class="text-muted">(60)</small></a>
+                                      <div class="collapse" id="sub-men1" data-parent="#list-group-men" style="">
+                                        <div class="list-group">
+                                          <a href="" class="list-group-item list-group-item-action active">T-Shirts <small class="text-muted">(10)</small></a>
+                                          <a href="" class="list-group-item list-group-item-action">Polo T-Shirts <small class="text-muted">(11)</small></a>
+                                          <a href="" class="list-group-item list-group-item-action">Round Neck T-Shirts <small class="text-muted">(12)</small></a>
+                                          <a href="" class="list-group-item list-group-item-action">V Neck T-Shirts <small class="text-muted">(13)</small></a>
+                                          <a href="" class="list-group-item list-group-item-action">Hooded T-Shirts <small class="text-muted">(14)</small></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="list-group-collapse sub-men">
+                                      <a class="list-group-item list-group-item-action" href="#sub-men2" data-toggle="collapse" aria-expanded="false" aria-controls="sub-men2">Footwear <small class="text-muted">(45)</small></a>
+                                      <div class="collapse" id="sub-men2" data-parent="#list-group-men">
+                                        <div class="list-group">
+                                          <a href="" class="list-group-item list-group-item-action">Sports Shoes <small class="text-muted">(10)</small></a>
+                                          <a href="" class="list-group-item list-group-item-action">Sneakers <small class="text-muted">(15)</small></a>
+                                          <a href="" class="list-group-item list-group-item-action">Formal Shoes <small class="text-muted">(20)</small></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <a href="" class="list-group-item list-group-item-action">Accessories <small class="text-muted">(11)</small></a>
+                                    <a href="" class="list-group-item list-group-item-action">Bags <small class="text-muted">(22)</small></a>
+                                  </div>
+                                </div>
+                                <!--/.categories-list-->
+
+                                <!-- <div class="filter-sidebar">
+                                    <h5 class="list-title"><strong><a href="#">Brand</a></strong></h5>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="filterBrand1" checked="checked">
+                                        <label class="custom-control-label" for="filterBrand1">Brand Name 1</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="filterBrand2" >
+                                        <label class="custom-control-label" for="filterBrand2">Brand Name 2</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="filterBrand3">
+                                        <label class="custom-control-label" for="filterBrand3">Brand Name 3</label>
+                                    </div>
+                                </div> -->
+                                <!--/.brand-list-->
+
+                                <div class="filter-sidebar">
+                                    <h5 class="list-title"><strong><a href="#">Price</a></strong></h5>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-12">
+                                            <div class="filter-sidebar">
+                                                <div class="title"><span>Price Range (Min - Max)</span></div>
+                                                <div class="input-group input-group-sm mb-3">
+                                                    <div class="input-group-prepend">
+                                                      <span class="input-group-text">Rp</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="min-price" id="min-price">
+                                                    <div class="input-group-append input-group-prepend">
+                                                      <span class="input-group-text">Rp</span>
+                                                    </div>
+                                                    <input type="text" class="form-control" name="max-price" id="max-price">
+                                                </div>
+                                                <div class="price-range">
+                                                    <div id="price-range-slider">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.price-filter-->
+                                
+                                <div class="filter-sidebar">
+                                    <h5 class="list-title"><strong><a href="#">Rating</a></strong></h5>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-6 col-md-12">
+                                            <div class="filter-sidebar"
+>                                                <div class="rating-range">
+                                                    <div id="rating-range">
+                                                    </div>
+                                                    <input type="hidden" class="form-control" name="min-range" id="min-range" value="1">
+                                                    <input type="hidden" class="form-control" name="max-range" id="max-range" value="5">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/.rating-filter-->
+
+                                <div style="clear:both"></div>
+                            </div>
+            
+                            <!--/.categories-list-->
+                        </aside>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="plugins/nouislider/nouislider.js"></script>
+
+    <script>
+        var slider          = document.getElementById('price-range-slider');
+        var sliderMin       = document.getElementById('min-price');
+        var sliderMax        = document.getElementById('max-price');
+
+        noUiSlider.create(slider, {
+            start: [ 2000000, 8000000 ],
+            connect : true,
+            range: {
+                'min': [  1000 ],
+                'max': [ 10000000 ]
+            }
+        });
+
+        slider.noUiSlider.on('update', function( values, handle ) {
+            if ( handle ) {
+                sliderMax.value = values[handle];
+            } else {
+                sliderMin.value = values[handle];
+            }
+        });
+
+        sliderMin.addEventListener('change', function(){
+            slider.noUiSlider.set([null, this.value]);
+        });
+
+        sliderMax.addEventListener('change', function(){
+            slider.noUiSlider.set([null, this.value]);
+        });
+
+        slider.addEventListener('change', function(){
+            slider.noUiSlider.set(this.value);
+        });
+    </script>
+
+    <script>
+        // if ($("#rating-range").length && "undefined" != typeof Swiper) {
+            var u = document.getElementById("rating-range");
+            noUiSlider.create(u, {
+                start: [$("#min-range").val(), $("#max-range").val()],
+                connect: !0,
+                orientation: "vertical",
+                snap: !0,
+                direction: "rtl",
+                range: {
+                    min: 1,
+                    "25%": 2,
+                    "50%": 3,
+                    "75%": 4,
+                    max: 5
+                },
+                pips: {
+                    mode: "values",
+                    values: [1, 2, 3, 4, 5]
+                }
+            })
+
+            u.noUiSlider.on("update", function(e, t) {
+                var i = $("#rating-range");
+                i.find('.noUi-value[style="bottom: 100%;"]').html('<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>'),
+                i.find('.noUi-value[style="bottom: 75%;"]').html('<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>'),
+                i.find('.noUi-value[style="bottom: 50%;"]').html('<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>'),
+                i.find('.noUi-value[style="bottom: 25%;"]').html('<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>'),
+                i.find('.noUi-value[style="bottom: 0%;"]').html('<div class="rating"><i class="fa fa-star-o"></i></div>');
+                var a = e[t];
+                t ? $("#max-range").val(Math.round(a)).attr("value", Math.round(a)) : $("#min-range").val(Math.round(a)).attr("value", Math.round(a));
+                for (var n = $("#min-range").val(), r = "" == (r = $("#max-range").val()) ? n : r, o = n; o < parseInt(r) + 1; o++) {
+                    switch (o) {
+                        case 5:
+                            case "5":
+                                var l = "100%";
+                                break;
+                        case 4:
+                            case "4":
+                                l = "75%";
+                                break;
+                        case 3:
+                            case "3":
+                                l = "50%";
+                                break;
+                        case 2:
+                            case "2":
+                                l = "25%";
+                                break;
+                        case 1:
+                            case "1":
+                                l = "0%"
+                    }
+                    i.find('.noUi-value[style="bottom: ' + l + ';"]').find(".fa").addClass("fa-star").removeClass("fa-star-o")
+                }
+            })
+
+            $("#max-range").on("change", function() {
+                u.noUiSlider.set([null, this.value])
+            })
+
+            $("#min-range").on("change", function() {
+                u.noUiSlider.set([this.value, null])
+            })
+    </script>
+  
+</body>
+</html>
