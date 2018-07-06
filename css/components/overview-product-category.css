@@ -1,0 +1,31 @@
+.product-filter {
+	border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    clear: both;
+    display: block;
+    margin-bottom: 20px;
+    padding-bottom: 7px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+	.product-filter p {
+		display: block;
+    	font-size: 14px;
+    	margin-top: 6px;
+	}
+
+.change-view {
+	margin-right: 10px;
+}
+	.change-view a {
+		border: 1px solid #CCCCCC;
+	    display: inline-block;
+	    font-size: 18px;
+	    font-weight: normal;
+	    height: 34px;
+	    line-height: 23px;
+	    margin-left: 5px;
+	    overflow: hidden;
+	    padding: 5px 8px;
+	    border-radius: 3px;
+	}
