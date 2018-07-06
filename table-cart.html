@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/table-cart.css">
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div class="main-container">
+            <div class="container-fluid limited">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="table-responsive shopping-cart">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                      <th>Seller</th>
+                                      <th class="text-center" style="width:40%">Product/Spesification</th>
+                                      <th class="text-center" style="width:9%">Quantity</th>
+                                      <th class="text-center">Price/Unit</th>
+                                      <th class="text-center">Subtotal</th>
+                                      <th class="text-center"><a class="btn btn-sm btn-outline-danger" href="#">Clear All Cart</a></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="seller-group">
+                                        <td colspan="6">
+                                            <div class="checkbox seller-name">
+                                                <label>
+                                                    <input type="checkbox" value="" checked="checked">
+                                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                    <a href="">Seller Store A</a>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <!-- /.seller-name -->
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="" checked="checked">
+                                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="product-item">
+                                                <a class="product-thumb" href="shop-single.html">
+                                                    <img src="img/product-thumb/product-2.jpg" alt="Product">
+                                                </a>
+                                                <div class="product-info">
+                                                    <h4 class="product-title">
+                                                        <a href="shop-single.html">Canon EOS 80D DLSR Digital Camera</a>
+                                                    </h4>
+                                                    <div class="product-sub-info">
+                                                        <span>Type: DLSR</span>
+                                                        <span class="pip-1">|</span>
+                                                        <span>Color: Black</span>
+                                                    </div>
+                                                    <div class="product-stock-status">
+                                                    <span class="badge badge-success">In stock</span>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!-- /.product-name -->
+                                        <td class="text-center">
+                                            <div class="input-group input-group-sm input-group-qty d-inline-flex mb-2">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-down border-light bg-light" type="button"><i class="fa fa-minus"></i></button>
+                                                </div>
+                                                <input type="text" class="form-control text-center border-light" aria-label="Quantity" value="1" data-min="1" data-max="10">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-up border-light bg-light" type="button"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!-- /.product-quantity -->
+                                        <td class="text-center text-lg">
+                                            <div class="product-new-price">Rp 8.000.000</div>
+                                            <div class="product-old-price">Rp 10.000.000</div>
+                                        </td>
+                                        <!-- /.product-price -->
+                                        <td class="text-center text-lg">
+                                            <div class="product-total-price">
+                                                Rp 8.000.000
+                                            </div>
+                                        </td>
+                                        <!-- /.product-sub-total -->
+                                        <td class="text-center">
+                                            <a class="remove-from-cart text-danger" href="#" data-toggle="tooltip" title="" data-original-title="Remove item">
+                                                <i class="fa fa-close"></i>
+                                            </a>
+                                        </td>
+                                        <!-- /.cart-action -->
+                                    </tr>
+                                    <tr> 
+                                        <td class="text-right">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="" checked="checked">
+                                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="product-item"><a class="product-thumb" href=""><img src="img/product-thumb/product-1.jpg" alt="Product"></a>
+                                              <div class="product-info">
+                                                <h4 class="product-title">
+                                                    <a href="">White Fujifilm Instax Mini 8 Instant Camera</a>
+                                                </h4>
+                                                <div class="product-sub-info">
+                                                    <span class="product-color">Type: Polaroid</span>
+                                                    <span class="pip-1">|</span>
+                                                    <span class="product-type">Color: White</span>
+                                                </div>
+                                                <div class="product-stock-status">
+                                                    <span class="badge badge-success">In stock</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                        </td>
+                                        <!-- /.product-name -->
+                                        <td class="text-center">
+                                            <div class="input-group input-group-sm input-group-qty d-inline-flex mb-2">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-down border-light bg-light" type="button"><i class="fa fa-minus"></i></button>
+                                                </div>
+                                                <input type="text" class="form-control text-center border-light" aria-label="Quantity" value="1" data-min="1" data-max="10">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-up border-light bg-light" type="button"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!-- /.product-quantity -->
+                                        <td class="text-center">
+                                            <div class="product-new-price">Rp 8.000.000</div>
+                                            <div class="product-old-price">Rp 8.000.000</div>
+                                        </td>
+                                        <!-- /.product-price -->
+                                        <td class="text-center text-lg">
+                                            <div class="product-total-price">
+                                                Rp 8.000.000
+                                            </div>
+                                        </td>
+                                        <!-- /.product-sub-total -->
+                                        <td class="text-center">
+                                            <a class="remove-from-cart text-danger" href="#" data-toggle="tooltip" title="" data-original-title="Remove item">
+                                                <i class="fa fa-close"></i>
+                                            </a>
+                                        </td>
+                                        <!-- /.cart-action -->
+                                    </tr>
+                                    <tr class="seller-group">
+                                        <td colspan="6">
+                                            <div class="checkbox seller-name">
+                                                <label>
+                                                    <input type="checkbox" value="" checked="checked">
+                                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                    <a href="">Seller Store B</a>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <!-- /.seller-name -->
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="" checked="checked">
+                                                    <span class="cr"><i class="cr-icon fa fa-check"></i></span>
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="product-item">
+                                                <a class="product-thumb" href="shop-single.html">
+                                                    <img src="img/product-thumb/product-2.jpg" alt="Product">
+                                                </a>
+                                                <div class="product-info">
+                                                    <h4 class="product-title">
+                                                        <a href="shop-single.html">Canon EOS 80D DLSR Digital Camera</a>
+                                                    </h4>
+                                                    <div class="product-sub-info">
+                                                        <span>Type: DLSR</span>
+                                                        <span class="pip-1">|</span>
+                                                        <span>Color: Black</span>
+                                                    </div>
+                                                    <div class="product-stock-status">
+                                                    <span class="badge badge-danger">Out of stock</span>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!-- /.product-name -->
+                                        <td class="text-center">
+                                            <div class="input-group input-group-sm input-group-qty d-inline-flex mb-2">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-down border-light bg-light" type="button"><i class="fa fa-minus"></i></button>
+                                                </div>
+                                                <input type="text" class="form-control text-center border-light" aria-label="Quantity" value="1" data-min="1" data-max="10">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-up border-light bg-light" type="button"><i class="fa fa-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <!-- /.product-quantity -->
+                                        <td class="text-center text-lg">
+                                            <div class="product-new-price">Rp 8.000.000</div>
+                                            <div class="product-old-price">Rp 10.000.000</div>
+                                        </td>
+                                        <!-- /.product-price -->
+                                        <td class="text-center text-lg">
+                                            <div class="product-total-price">
+                                                Rp 8.000.000
+                                            </div>
+                                        </td>
+                                        <!-- /.product-sub-total -->
+                                        <td class="text-center">
+                                            <a class="remove-from-cart text-danger" href="#" data-toggle="tooltip" title="" data-original-title="Remove item">
+                                                <i class="fa fa-close"></i>
+                                            </a>
+                                        </td>
+                                        <!-- /.cart-action -->
+                                    </tr>
+                                    <tr class="cart-total">
+                                        <td colspan="4" class="text-right">
+                                            <h6 class="text-muted"><i>Total price on selected item : </i></h6>
+                                        </td>
+                                        <td colspan="2">
+                                            <h4>Rp 10.000.000</h4>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
