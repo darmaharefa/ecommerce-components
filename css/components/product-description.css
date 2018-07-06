@@ -1,0 +1,27 @@
+.nav-tabs {
+	border-bottom: 3px solid navy;
+	margin-bottom: 20px;
+}
+	.nav-tabs .nav-item .nav-link {
+		display: block;
+	    font-size: 14px;
+	    font-weight: 200;
+	    letter-spacing: 2px;
+	    margin: 0 0 0 0;
+	    text-transform: uppercase;
+	    padding: 10px 15px;
+	    border:0px;
+	}
+	.nav-tabs .nav-item .nav-link:hover{
+		background: gold;
+		border:0px;
+		border-radius : 0px;
+	}
+	.nav-tabs .nav-link.active,
+	.nav-tabs .nav-item.show .nav-link{
+		background: gold;
+		color: navy;
+		border:0px;
+		border-radius: 0px;
+	}
+	
