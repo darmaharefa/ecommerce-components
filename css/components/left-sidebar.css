@@ -76,7 +76,7 @@
 	}
 
 .filter-sidebar {
-	margin-bottom : 25px;
+	
 }
 	.filter-sidebar .title {
 		padding-bottom : 10px;
@@ -136,6 +136,10 @@
 	    height: 1px;
 	    background-color: #ced4da;
 	}
+
+.price-range {
+	padding : 10px 0px;
+}
 
 .filter-sidebar .rating-range #rating-range {
 	height: 100px;

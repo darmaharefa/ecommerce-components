@@ -102,6 +102,25 @@ a {
     } 
   }
 
+.input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+  .input-group-addon i.fa{
+    width: 36px;
+    height: 36px;
+    display: block;
+    background-color: #2196f3;
+    border-radius: 4px;
+    line-height: 36px;
+    color: #fff;
+  }
+
   /* Helper class */
 .uppercase {
   	text-transform: uppercase; }
@@ -117,6 +136,15 @@ a {
 
 .no-border {
   	border: 0; }
+
+    .no-border-t {
+      border-top: 0; }
+    .no-border-r {
+      border-right: 0; }
+    .no-border-b {
+      border-bottom: 0; }
+    .no-border-l {
+      border-left: 0; }
 
 .width100, .w100 {
   	width: 100%; }
