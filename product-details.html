@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/smoothproducts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/product-details.css">
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div class="main-container">
+            <div class="container-fluid limited bg-white">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <img src="img/product/product-1.jpg" alt="" width="100%">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-5">
+                        <h3 class="product-title"> White Fujifilm Instax Mini 8 Instant Camera</h3>
+
+                        <div class="rating-stars">
+                            <i class="fa fa-star filled"></i>
+                            <i class="fa fa-star filled"></i>
+                            <i class="fa fa-star filled"></i>
+                            <i class="fa fa-star filled"></i>
+                            <i class="fa fa-star-o"></i>
+                            <span><a href="">(10 review)</a></span>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="price-sales"> Rp 500.000</span>
+                            <span class="price-standard">Rp 1.000.000</span>
+                        </div>
+                        <div class="color-details">
+                            <span class="selected-color"><strong>COLOR</strong></span>
+                            <ul class="swatches Color">
+                                <li class="selected"><a style="background-color:#f1f40e"> </a></li>
+                                <li><a style="background-color:#adadad"> </a></li>
+                                <li><a style="background-color:#4EC67F"> </a></li>
+                            </ul>
+                        </div>
+                        <!--/.color-details-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/smoothproducts.js"></script>
+
+    <script>
+        // product details color switch
+        $(".swatches li").click(function () {
+            $(".swatches li.selected").removeClass("selected");
+            $(this).addClass('selected');
+        });
+
+        $(".product-color a").click(function () {
+            $(".product-color a").removeClass("active");
+            $(this).addClass('active');
+
+        });
+    </script>
+</html>

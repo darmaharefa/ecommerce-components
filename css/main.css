@@ -198,6 +198,21 @@ a {
     opacity: 1;
 }
 
+
+.rating-stars {
+  display: inline-block;
+}
+
+  .rating-stars i {
+    display: inline-block;
+      margin-right: 2px;
+      color: #cad0d9;
+      font-size: 14px;
+  }
+  .rating-stars i.filled {
+      color: #ffb74f;
+  }
+
   /* Helper class */
 .uppercase {
   	text-transform: uppercase; }
