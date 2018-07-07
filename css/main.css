@@ -339,7 +339,7 @@ hr.small {
   
 
 .btn-outline-viewmore{
-  border: 2px solid #1a004f;
+  border: 2.5px solid #1a004f;
   color: #1a004f;
   transition: .5s;
 }
@@ -355,7 +355,7 @@ hr.small {
 /*=======================================  */
 .box-title {
   text-align: left; 
-  border-bottom: solid 4px #1a004f;
+  border-bottom: solid 3px #1a004f;
 }
   .box-title .inner{
     display: flex;
@@ -376,4 +376,6 @@ hr.small {
   }
   .box-title .inner a {
     font-size: 12px;
+    border-radius: 6px;
+    font-weight: bold;
   }
