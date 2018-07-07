@@ -68,41 +68,6 @@ a {
   margin-right: -16px; 
 }
 
-.box-title {
-  border-bottom: solid 4px #1a004f;
-  text-align: left; 
-}
-  .box-title h2, .view-more {
-    display: inline-block;
-    margin: 15px 0;
-    line-height: normal;
-  }
-  .box-title h2 {
-    font-weight: 600;
-    font-size: 18px;
-    text-transform: uppercase;
-  }
-  .box-title h2 span {
-    font-weight: lighter; 
-  }
-  
- .view-more {
-  position: absolute;
-  right: 1%;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 5px 10px;
-  border: 2px solid #1a004f;
-  color: #1a004f;
-  border-radius: 4px;
-  transition: .5s;
-}
-.view-more:hover{
-  color: white;
-  background: #1a004f;
-  transition: 1s;
-}
-
 .input-group-addon {
   padding: 6px 12px;
   font-size: 14px;
@@ -370,3 +335,45 @@ hr.small {
 .bg-white {
   background: white;
 }
+
+  
+
+.btn-outline-viewmore{
+  border: 2px solid #1a004f;
+  color: #1a004f;
+  transition: .5s;
+}
+
+  .btn-outline-viewmore:hover{
+    color: white;
+    background: #1a004f;
+    transition: .3s;
+  }
+
+
+  /*Box Title Css*/
+/*=======================================  */
+.box-title {
+  text-align: left; 
+  border-bottom: solid 4px #1a004f;
+}
+  .box-title .inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin: 4px;
+    padding: 4px 0px;
+  }
+  .box-title .inner h2 {
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 18px;
+    max-width: 50%;
+  }
+  .box-title .inner h2 span {
+    font-weight: lighter; 
+  }
+  .box-title .inner a {
+    font-size: 12px;
+  }
