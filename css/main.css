@@ -72,38 +72,36 @@ a {
   border-bottom: solid 4px #1a004f;
   text-align: left; 
 }
-  .box-title h2 {
-    margin: 15px 0;
-    padding: 0;
-    font-size: 18px;
-    line-height: normal;
-    font-weight: 500;
-    text-transform: uppercase;
+  .box-title h2, .view-more {
     display: inline-block;
+    margin: 15px 0;
+    line-height: normal;
+  }
+  .box-title h2 {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
   }
   .box-title h2 span {
     font-weight: lighter; 
   }
-
+  
  .view-more {
-  font-size: 12px;
-  font-weight: normal;
-  letter-spacing: 0.54px;
-  padding: 15px;
   position: absolute;
-  right: 1px;
-  text-align: center;
-  text-transform: uppercase;
-  top: 5px; 
+  right: 1%;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border: 2px solid #1a004f;
+  color: #1a004f;
+  border-radius: 4px;
+  transition: .5s;
 }
-  @media (max-width: 767px) {
-    .view-more {
-      font-size: 11px;
-      padding: 2px 7px;
-      right: 1px;
-      top: 17px; 
-    } 
-  }
+.view-more:hover{
+  color: white;
+  background: #1a004f;
+  transition: 1s;
+}
 
 .input-group-addon {
   padding: 6px 12px;
