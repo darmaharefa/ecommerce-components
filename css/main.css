@@ -339,8 +339,10 @@ hr.small {
   
 
 .btn-outline-viewmore{
-  border: 2.5px solid #1a004f;
   color: #1a004f;
+  background-color: transparent;
+  background-image: none;
+  border-color: #1a004f;
   transition: .5s;
 }
 
