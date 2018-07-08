@@ -170,17 +170,17 @@ a {
 }
 
 
-.product-rating {
+.product-rating, .review-rating {
   display: inline-block;
 }
 
-  .product-rating i {
+  .product-rating i, .review-rating i {
     display: inline-block;
       margin-right: 2px;
       color: #cad0d9;
       font-size: 14px;
   }
-  .product-rating i.filled {
+  .product-rating i.filled, .review-rating i.filled {
       color: #ffb74f;
   }
 
@@ -314,6 +314,14 @@ hr.small {
 .pip-1 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
 }
 
 .hide-visually {
