@@ -1,5 +1,5 @@
 .card-sidebar-default, .card-sidebar-profile {
-	margin-bottom: 4px;
+	margin-bottom: 8px;
 }
 
 .card-sidebar-default {
@@ -33,18 +33,19 @@
 	}
 	.card-sidebar-profile .card-profile-info {
 		width: 60%;
-		padding: 10px;
+		padding: 20px 10px;
 	}
 	.card-sidebar-profile .card-profile-info .profile-name{
-		font-size: 16px;
+		font-size: 14px;
 		font-weight: bold;
 	}
 	.card-sidebar-profile .card-profile-info .profile-wallet-label{
 		padding-top: 4px;
 		font-size: 12px;
-		font-weight: bold;
+		color : #999;
 	}
 	.card-sidebar-profile .card-profile-info .profile-wallet-value{
 		font-size: 18px;
 		line-height: 20px;
+		font-weight: bold;
 	}

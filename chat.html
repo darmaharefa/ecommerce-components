@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/components/header.css">
+        <link rel="stylesheet" href="css/components/footer.css">
+        <link rel="stylesheet" href="css/components/customer-sidebar.css">
+        <link rel="stylesheet" href="css/components/chat.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-light bg-main">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo/logo.png" height="35px" class="d-inline-block align-top" alt="">
+                </a>
+                <div class="navbar-search">
+                    <form action="">
+                        <div class="input-group">
+                            <div class="input-group-btn search-panel">
+                                <button type="button" class="btn btn-default btn-category dropdown-toggle" data-toggle="dropdown">
+                                <span id="search_concept">Kategori</span> <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-category" role="menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-credit-card-alt" aria-hidden="true"></i>Promo
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-mobile" style="font-size:25px;" aria-hidden="true"></i>Handphone
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-desktop" aria-hidden="true"></i>Computer
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-camera-retro" aria-hidden="true"></i>Camera
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-trophy" aria-hidden="true"></i>Sport
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-cutlery" aria-hidden="true"></i>Food
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-industry" aria-hidden="true"></i>Industrial
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-motorcycle" aria-hidden="true"></i>Motorcycle
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="hidden" name="search_param" value="all" id="search_param">
+                            <input type="text" class="form-control product-search" name="product-search" placeholder="Search product or merchant">
+                        </div>
+                    </form>
+                </div>
+                <div class="navbar-cart">
+                    <a href="">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="navbar-auth">
+                    <button class="btn btn-outline-register" type="submit">Register</button>
+                    <button class="btn btn-outline-login" type="submit">Login</button>
+                </div>
+            </nav>
+        </header>
+        <!-- ./Header Navigation End -->
+
+        
+        <div id="wrapper">
+            <div class="main-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="customer-sidebar">
+                                <div class="card card-sidebar-profile">
+                                    <div class="card-content card-profile">
+                                        <div class="card-profile-image">
+                                            <img src="img/product/product-1.jpg" alt="">
+                                        </div>
+                                        <div class="card-profile-info">
+                                            <div class="profile-name">Adeline Rosabela</div>
+                                            <div class="profile-wallet">
+                                                <div class="profile-wallet-label">My Wallet</div>
+                                                <div class="profile-wallet-value">Rp. 1.000.000</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-sidebar-default">
+                                    <div class="card-header">Inbox</div>
+                                    <div class="card-content">
+                                        <ul>
+                                            <li><a href="">Chat</a></li>
+                                            <li><a href="">Upload Product</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card card-sidebar-default">
+                                    <div class="card-header">My Profile</div>
+                                    <div class="card-content">
+                                        <ul>
+                                            <li><a href="">Change Profile</a></li>
+                                            <li><a href="">Topup Wallet</a></li>
+                                            <li><a href="">Withdraw Wallet</a></li>
+                                            <li><a href="">Confirm Payment</a></li>
+                                            <li><a href="">History</a></li>
+                                            <li><a href="">Favourite Seller</a></li>
+                                            <li><a href="">Settings</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card card-sidebar-default">
+                                    <div class="card-header">Order List</div>
+                                    <div class="card-content">
+                                        <ul>
+                                            <li><a href="">Packed</a></li>
+                                            <li><a href="">Ready</a></li>
+                                            <li><a href="">Sent</a></li>
+                                            <li><a href="">Finished</a></li>
+                                            <li><a href="">Cancelled</a></li>
+                                            <li><a href="">Returned</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="chatbox">
+                               
+                                
+                                    <div class="chatbox-history">
+                                        <div class="incoming-chat">
+
+                                            <div class="incoming-chat-img"><img src="img/reviews/user.jpg" alt=""></div>
+                                            <div class="received-chat">
+                                                <div class="received-chat-message">
+                                                    <p>Mikroskil Medan</p>
+                                                    <span class="time-date"> 11:01 AM    |    June 7</span>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="outgoing-chat">
+                                                <div class="send-chat-message">
+                                                    <p>Test Chat 1 2 3 di coba</p>
+                                                    <span class="time-date"> 11:01 AM    |    June 7</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="incoming-chat">
+                                                <div class="incoming-chat-img"> <img src="img/reviews/user.jpg" alt=""> </div>
+                                                <div class="received-chat">
+                                                    <div class="received-chat-message">
+                                                        <p>Test, 1 + 1 sama dengan 2</p>
+                                                        <span class="time-date"> 11:01 AM    |    Yesterday</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="outgoing-chat">
+                                                <div class="send-chat-message">
+                                                    <p>Lorem ipsum dolor</p>
+                                                    <span class="time-date"> 11:01 AM    |    Today</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="incoming-chat">
+                                                <div class="incoming-chat-img"> <img src="img/reviews/user.jpg" alt=""> </div>
+                                                    <div class="received-chat">
+                                                        <div class="received-chat-message">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo amet ex placeat beatae perspiciatis voluptates, voluptatum, porro vitae dolorum dignissimos veritatis quas eaque iusto eum iste unde voluptas nulla nesciunt.</p>
+                                                            <span class="time-date"> 11:01 AM    |    Today</span>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                                      
+                                            <div class="chatbox-control d-flex justify-content-between">
+                                                <div class="chatbox-control-input">
+                                                    <input type="text" class="write_msg" placeholder="Type a message" />
+                                                </div>
+                                                <div class="chatbox-control-button">
+                                                    <button class="btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                                                </div>
+                                            </div>
+                                                 
+                                            <div class="col-lg-4 col-md-4"></div>
+                                        </div>
+                                    </div>
+                               
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./Wrapper End -->
+
+
+        <footer>
+            <div class="footer">
+                <div class="container f-link">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6>Royal Brew House</h6>
+                            <ul>
+                                <li><a href="">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h6>Customer Service</h6>
+                            <ul>
+                                <li><a href="">Help Center</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Report Abuse</a></li>
+                                <li><a href="">Terms and Condition</a></li>
+                                <li><a href="">Privacy Policies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h6>Shopping</h6>
+                            <ul>
+                                <li><a href="">How to Shop</a></li>
+                                <li><a href="">Payment method</a></li>
+                                <li><a href="">Cancelations and Refund</a></li>
+                                <li><a href="">Redeem Voucher</a></li>
+                                <li><a href="">Shipping Method</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <h6>Seller</h6>
+                            <ul>
+                                <li><a href="">How to Sell</a></li>
+                                <li><a href="">Advantage of Selling</a></li>
+                                <li><a href="">Selling Tips</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-1">
+                            <h6>Download</h6>
+                            <ul>
+                                <li>
+                                    <a class="f-link__apps" href="">
+                                        <img src="img/footer/google-play.png" alt="google-play">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="f-link__apps" href="">
+                                        <img src="img/footer/app-store.png" alt="app-store">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ./Footer Navigation End -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        
+    </body>
+</html>
