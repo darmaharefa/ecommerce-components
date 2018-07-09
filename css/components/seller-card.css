@@ -1,9 +1,11 @@
 
 .p-store{
-	padding: 10px;
-	background: #f5f5f5;
-	border: 1px solid rgba(0,0,0,.125);
-	border-radius: 4px;
+	/*padding-left: 20px;*/
+	/*padding: 10px;*/
+	/*background: #f5f5f5;*/
+	/*border: 1px solid rgba(0,0,0,.125);*/
+	border-left: 1px solid rgba(0,0,0,.125);
+	/*border-radius: 4px;*/
 }
 	.p-store .p-store__image{
 		position: relative;
@@ -65,5 +67,7 @@
 	}
 
 	.btn-p-store {
+		font-size: 12px;
+		color : white;
 		margin: 10px 0px;
 	}

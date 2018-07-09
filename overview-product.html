@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/components/header.css">
+        <link rel="stylesheet" href="css/components/footer.css">
+        <link rel="stylesheet" href="css/components/product-details.css">
+        <link rel="stylesheet" href="css/components/seller-card.css">
+        <link rel="stylesheet" href="css/components/product-description.css">
+        <link href="plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+        <link href="plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/components/home-product-slider.css">
+        <link rel="stylesheet" href="css/components/product-card.css">
+        <link rel="stylesheet" href="css/components/product-recomendation.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-light bg-main">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo/logo.png" height="35px" class="d-inline-block align-top" alt="">
+                </a>
+                <div class="navbar-search">
+                    <form action="">
+                        <div class="input-group">
+                            <div class="input-group-btn search-panel">
+                                <button type="button" class="btn btn-default btn-category dropdown-toggle" data-toggle="dropdown">
+                                <span id="search_concept">Kategori</span> <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-category" role="menu">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-credit-card-alt" aria-hidden="true"></i>Promo
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-mobile" style="font-size:25px;" aria-hidden="true"></i>Handphone
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-desktop" aria-hidden="true"></i>Computer
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-camera-retro" aria-hidden="true"></i>Camera
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-trophy" aria-hidden="true"></i>Sport
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-cutlery" aria-hidden="true"></i>Food
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-industry" aria-hidden="true"></i>Industrial
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-motorcycle" aria-hidden="true"></i>Motorcycle
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <input type="hidden" name="search_param" value="all" id="search_param">
+                            <input type="text" class="form-control product-search" name="product-search" placeholder="Search product or merchant">
+                        </div>
+                    </form>
+                </div>
+                <div class="navbar-cart">
+                    <a href="">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="navbar-auth">
+                    <button class="btn btn-outline-register" type="submit">Register</button>
+                    <button class="btn btn-outline-login" type="submit">Login</button>
+                </div>
+            </nav>
+        </header>
+        <!-- ./Header Navigation End -->
+        
+        <div id="wrapper">
+            <div class="main-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <img src="img/product/product-1.jpg" alt="" width="100%">
+                        </div>
+                        <div class="col-lg-6 col-md-7 col-sm-7">
+                            <div class="product-details bg-white">
+                                <h3 class="product-title"> White Fujifilm Instax Mini 8 Instant Camera</h3>
+                                <!-- ./product-title -->
+                                <div class="product-rating">
+                                    <i class="fa fa-star filled"></i>
+                                    <i class="fa fa-star filled"></i>
+                                    <i class="fa fa-star filled"></i>
+                                    <i class="fa fa-star filled"></i>
+                                    <i class="fa fa-star-o"></i>
+                                    <span><a href="">(10 review)</a></span>
+                                </div>
+                                <!-- ./rating-stars -->
+                                <div class="product-price">
+                                    <span class="price-sales"> Rp 500.000</span>
+                                    <span class="price-standard">Rp 1.000.000</span>
+                                </div>
+                                <!-- /.product-price -->
+                                <div class="product-status">
+                                    <span class="badge badge-success">In stock</span>
+                                    <span class="badge badge-danger">Out of stock</span>
+                                </div>
+                                <!-- ./product-status -->
+                                <div class="color-details">
+                                    <span class="selected-color"><strong>COLOR</strong></span>
+                                    <ul class="swatches Color">
+                                        <li class="selected"><a style="background-color:#f1f40e"> </a></li>
+                                        <li><a style="background-color:#adadad"> </a></li>
+                                        <li><a style="background-color:#4EC67F"> </a></li>
+                                    </ul>
+                                </div>
+                                <!--/.color-details-->
+                                <div class="product-filter">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-12 col-xs-12">
+                                            <div class="product-filter-quantity">
+                                                <div class="input-group input-group-sm input-group-qty d-inline-flex">
+                                                    <div class="input-group-prepend w25">
+                                                        <button class="btn btn-down bg-light" type="button"><i class="fa fa-minus"></i></button>
+                                                    </div>
+                                                    <input type="text" class="form-control text-center w50" aria-label="Quantity" value="1" data-min="1" data-max="10">
+                                                    <div class="input-group-append w25">
+                                                        <button class="btn btn-up bg-light" type="button"><i class="fa fa-plus"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-xs-12">
+                                            <div class="product-filter-size">
+                                                <select class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                                                    <option value="strawberries" selected="">Size</option>
+                                                    <option value="mango">XL</option>
+                                                    <option value="bananas">XXL</option>
+                                                    <option value="watermelon">M</option>
+                                                    <option value="apples">L</option>
+                                                    <option value="apples">S</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ./product-filter-->
+                                <div class="product-button">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-12 col-xs-12">
+                                            <button class="btn btn-danger btn-sm btn-block">Buy Now</button>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12 col-xs-12">
+                                            <button class="btn btn-success btn-sm btn-block">Add to cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-xs-12">
+                                            <h5>
+                                            <badge class="badge p10 text-uppercase"><i class="fa fa-lock"></i> Secure Online Ordering</
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ./product-button -->
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-2">
+                            <div class="row">
+                                <div class="col-md-12 p-store">
+                                    <div class="row">
+                                        <div class="col-md-4 padding-r-0">
+                                            <div class="p-store__image">
+                                                <a href="">
+                                                    <img src="img/product/product-6.jpg" alt="store-image">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="p-store__info">
+                                                <p class="p-store__info-name"><a href="">Seller Name</a></p>
+                                                <p>
+                                                    Reputation : <span class="p-store__info-rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                                                </p>
+                                                <p>Last Onlne : <span class="p-store__info-onlne">5 minutes ago</span></p>
+                                                <p>See Feedback : <a href="">100 feedback</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row p-store__info-row white-card">
+                                        <div class="col-md-6">
+                                            <p><b>Transaction Success</b></p>
+                                            <p class="p-store__success">100%</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p><b>Status</b></p>
+                                            <p class="p-store__status p-store__status-gold">Gold</p>
+                                        </div>
+                                    </div>
+                                    <div class="row p-store__info-row white-card">
+                                        <div class="col-md-6">
+                                            <p><b>Response Time</b></p>
+                                            <p class="p-store__respose-time">&lt; 24h</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <p><b>Response Rate</b></p>
+                                            <p class="p-store__response-rate">100%</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a href="" class="btn btn-warning btn-sm btn-block btn-p-store"><i class="fa fa-heart-o"></i> Favorite Seller</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="" class="btn btn-primary btn-sm btn-block btn-p-store"><i class="fa fa-commenting-o"></i> Chat Seller</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 bg-white">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="product-description w100 clearfix">
+                                        <ul class="nav nav-tabs" id="tab-description" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#description" data-toggle="tab" aria-expanded="false">Description</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#review" data-toggle="tab" aria-expanded="false">Review (10)</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt eaque et quas voluptatum quisquam animi voluptates minus sunt vero voluptatem aliquam, quaerat! Temporibus sit iusto cupiditate, obcaecati voluptatem, numquam illo!<br>
+                                                100% Cotton<br> <br>
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Data 1</th>
+                                                            <th>Data 2</th>
+                                                            <th>Data 3</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Lorem Ipsum</td>
+                                                            <td>Lorem Ipsum</td>
+                                                            <td>Lorem Ipsum</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lorem Ipsum</td>
+                                                            <td>Lorem Ipsum</td>
+                                                            <td>Lorem Ipsum</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lorem Ipsum</td>
+                                                            <td>Lorem Ipsum</td>
+                                                            <td>Lorem Ipsum</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Lorem Ipsum</td>
+                                                            <td>Lorem Ipsum</td>
+                                                            <td>Lorem Ipsum</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade" id="review">
+                                                <div class="comment">
+                                                    <div class="comment-author-ava"><img src="img/reviews/user.jpg" alt="Review author"></div>
+                                                    <div class="comment-body">
+                                                        <div class="comment-header d-flex justify-content-between">
+                                                            <h4 class="comment-title">Soft, comfortable, and durable...</h4>
+                                                            <div class="mb-2">
+                                                                <div class="review-rating">
+                                                                    <i class="fa fa-star filled"></i>
+                                                                    <i class="fa fa-star filled"></i>
+                                                                    <i class="fa fa-star filled"></i>
+                                                                    <i class="fa fa-star filled"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="comment-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                                                        <div class="comment-footer"><span class="comment-name">Darma Harefa</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment">
+                                                    <div class="comment-author-ava"><img src="img/reviews/user.jpg" alt="Review author"></div>
+                                                    <div class="comment-body">
+                                                        <div class="comment-header d-flex justify-content-between">
+                                                            <h4 class="comment-title">Soft, comfortable, and durable...</h4>
+                                                            <div class="mb-2">
+                                                                <div class="review-rating">
+                                                                    <i class="fa fa-star filled"></i>
+                                                                    <i class="fa fa-star filled"></i>
+                                                                    <i class="fa fa-star filled"></i>
+                                                                    <i class="fa fa-star filled"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="comment-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                                                        <div class="comment-footer"><span class="comment-name">Darma Harefa</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment">
+                                                    <div class="comment-author-ava"><img src="img/reviews/user.jpg" alt="Review author"></div>
+                                                    <div class="comment-body">
+                                                        <div class="comment-header d-flex justify-content-between">
+                                                            <h4 class="comment-title">Soft, comfortable, and durable...</h4>
+                                                            <div class="mb-2">
+                                                                <div class="review-rating">
+                                                                    <i class="fa fa-star filled"></i>
+                                                                    <i class="fa fa-star filled"></i>
+                                                                    <i class="fa fa-star filled"></i>
+                                                                    <i class="fa fa-star filled"></i>
+                                                                    <i class="fa fa-star"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="comment-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                                                        <div class="comment-footer"><span class="comment-name">Darma Harefa</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.tab content -->
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-12 box-title">
+                            <div class="inner">
+                                <h2>
+                                <span>Recommendation</span> For You
+                                </h2>
+                                <a href="category.html" class="btn btn-outline-viewmore btn-sm"><i class="fa fa-bars"></i> View more</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12">
+                            <div class="relative content featured-list-row w100">
+                                <nav class="slider-nav has-white-bg nav-narrow-svg">
+                                    <a class="prev">
+                                        <span class="nav-icon-wrap"></span>
+                                    </a>
+                                    <a class="next">
+                                        <span class="nav-icon-wrap"></span>
+                                    </a>
+                                </nav>
+                                <div class="no-margin featured-list-slider ">
+                                    <div class="product-card bg-white">
+                                        <a class="product-thumb" href=""><img src="img/product/product-1.jpg" alt="Product"></a>
+                                        <h3 class="product-title"><a href="">Camera Polaroid White Fujifilm Instax</a></h3>
+                                        <h4 class="product-store"><i class="fa fa-building-o"></i> Adeline Store</h4>
+                                        <h4 class="product-price">Rp 500.000<del>Rp 1.000.000</del></h4>
+                                        <div class="product-buttons">
+                                            <button class="btn btn-danger btn-sm btn-block"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card bg-white">
+                                        <a class="product-thumb" href=""><img src="img/product/product-1.jpg" alt="Product"></a>
+                                        <h3 class="product-title"><a href="">Camera Polaroid White Fujifilm Instax</a></h3>
+                                        <h4 class="product-store"><i class="fa fa-building-o"></i> Adeline Store</h4>
+                                        <h4 class="product-price">Rp 500.000<del>Rp 1.000.000</del></h4>
+                                        <div class="product-buttons">
+                                            <button class="btn btn-danger btn-sm btn-block"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card bg-white">
+                                        <a class="product-thumb" href=""><img src="img/product/product-1.jpg" alt="Product"></a>
+                                        <h3 class="product-title"><a href="">Camera Polaroid White Fujifilm Instax</a></h3>
+                                        <h4 class="product-store"><i class="fa fa-building-o"></i> Adeline Store</h4>
+                                        <h4 class="product-price">Rp 500.000<del>Rp 1.000.000</del></h4>
+                                        <div class="product-buttons">
+                                            <button class="btn btn-danger btn-sm btn-block"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card bg-white">
+                                        <a class="product-thumb" href=""><img src="img/product/product-1.jpg" alt="Product"></a>
+                                        <h3 class="product-title"><a href="">Camera Polaroid White Fujifilm Instax</a></h3>
+                                        <h4 class="product-store"><i class="fa fa-building-o"></i> Adeline Store</h4>
+                                        <h4 class="product-price">Rp 500.000<del>Rp 1.000.000</del></h4>
+                                        <div class="product-buttons">
+                                            <button class="btn btn-danger btn-sm btn-block"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card bg-white">
+                                        <a class="product-thumb" href=""><img src="img/product/product-1.jpg" alt="Product"></a>
+                                        <h3 class="product-title"><a href="">Camera Polaroid White Fujifilm Instax</a></h3>
+                                        <h4 class="product-store"><i class="fa fa-building-o"></i> Adeline Store</h4>
+                                        <h4 class="product-price">Rp 500.000<del>Rp 1.000.000</del></h4>
+                                        <div class="product-buttons">
+                                            <button class="btn btn-danger btn-sm btn-block"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card bg-white">
+                                        <a class="product-thumb" href=""><img src="img/product/product-1.jpg" alt="Product"></a>
+                                        <h3 class="product-title"><a href="">Camera Polaroid White Fujifilm Instax</a></h3>
+                                        <h4 class="product-store"><i class="fa fa-building-o"></i> Adeline Store</h4>
+                                        <h4 class="product-price">Rp 500.000<del>Rp 1.000.000</del></h4>
+                                        <div class="product-buttons">
+                                            <button class="btn btn-danger btn-sm btn-block"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        </div>
+                                    </div>
+                                    <div class="product-card bg-white">
+                                        <a class="product-thumb" href=""><img src="img/product/product-1.jpg" alt="Product"></a>
+                                        <h3 class="product-title"><a href="">Camera Polaroid White Fujifilm Instax</a></h3>
+                                        <h4 class="product-store"><i class="fa fa-building-o"></i> Adeline Store</h4>
+                                        <h4 class="product-price">Rp 500.000<del>Rp 1.000.000</del></h4>
+                                        <div class="product-buttons">
+                                            <button class="btn btn-danger btn-sm btn-block"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Wrapper End -->
+            <footer>
+                <div class="footer">
+                    <div class="container f-link">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h6>Royal Brew House</h6>
+                                <ul>
+                                    <li><a href="">About Us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h6>Customer Service</h6>
+                                <ul>
+                                    <li><a href="">Help Center</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Report Abuse</a></li>
+                                    <li><a href="">Terms and Condition</a></li>
+                                    <li><a href="">Privacy Policies</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h6>Shopping</h6>
+                                <ul>
+                                    <li><a href="">How to Shop</a></li>
+                                    <li><a href="">Payment method</a></li>
+                                    <li><a href="">Cancelations and Refund</a></li>
+                                    <li><a href="">Redeem Voucher</a></li>
+                                    <li><a href="">Shipping Method</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
+                                <h6>Seller</h6>
+                                <ul>
+                                    <li><a href="">How to Sell</a></li>
+                                    <li><a href="">Advantage of Selling</a></li>
+                                    <li><a href="">Selling Tips</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-1">
+                                <h6>Download</h6>
+                                <ul>
+                                    <li>
+                                        <a class="f-link__apps" href="">
+                                            <img src="img/footer/google-play.png" alt="google-play">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="f-link__apps" href="">
+                                            <img src="img/footer/app-store.png" alt="app-store">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- ./Footer Navigation End -->
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/bootstrap.js"></script>
+            <script src="js/vendors.min.js"></script>
+            <script src="js/script.js"></script>
+        </body>
+    </html>

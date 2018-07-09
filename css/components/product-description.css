@@ -1,5 +1,5 @@
 .product-description {
-	padding : 10px 0px;
+	margin : 40px 0px;
 }
 
 .nav-tabs {
@@ -12,12 +12,11 @@
 	    font-weight: 200;
 	    letter-spacing: 2px;
 	    margin: 0 0 0 0;
-	    text-transform: uppercase;
 	    padding: 10px 15px;
 	    border:0px;
 	}
 	.nav-tabs .nav-item .nav-link:hover{
-		color: gold;
+		color: white;
 		background: navy;
 		border:0px;
 		border-radius : 0px;
@@ -25,7 +24,7 @@
 	.nav-tabs .nav-link.active,
 	.nav-tabs .nav-item.show .nav-link{
 		background: navy;
-		color: gold;
+		color: white;
 		border:0px;
 		border-radius: 0px;
 	}

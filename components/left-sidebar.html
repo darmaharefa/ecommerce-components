@@ -154,69 +154,68 @@
     </script>
 
     <script>
-        // if ($("#rating-range").length && "undefined" != typeof Swiper) {
-            var u = document.getElementById("rating-range");
-            noUiSlider.create(u, {
-                start: [$("#min-range").val(), $("#max-range").val()],
-                connect: !0,
-                orientation: "vertical",
-                snap: !0,
-                direction: "rtl",
-                range: {
-                    min: 1,
-                    "25%": 2,
-                    "50%": 3,
-                    "75%": 4,
-                    max: 5
-                },
-                pips: {
-                    mode: "values",
-                    values: [1, 2, 3, 4, 5]
+        var u = document.getElementById("rating-range");
+        noUiSlider.create(u, {
+            start: [$("#min-range").val(), $("#max-range").val()],
+            connect: !0,
+            orientation: "vertical",
+            snap: !0,
+            direction: "rtl",
+            range: {
+                min: 1,
+                "25%": 2,
+                "50%": 3,
+                "75%": 4,
+                max: 5
+            },
+            pips: {
+                mode: "values",
+                values: [1, 2, 3, 4, 5]
+            }
+        })
+
+        u.noUiSlider.on("update", function(e, t) {
+            var i = $("#rating-range");
+            i.find('.noUi-value[style="bottom: 100%;"]').html('<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>'),
+            i.find('.noUi-value[style="bottom: 75%;"]').html('<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>'),
+            i.find('.noUi-value[style="bottom: 50%;"]').html('<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>'),
+            i.find('.noUi-value[style="bottom: 25%;"]').html('<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>'),
+            i.find('.noUi-value[style="bottom: 0%;"]').html('<div class="rating"><i class="fa fa-star-o"></i></div>');
+            var a = e[t];
+            t ? $("#max-range").val(Math.round(a)).attr("value", Math.round(a)) : $("#min-range").val(Math.round(a)).attr("value", Math.round(a));
+            for (var n = $("#min-range").val(), r = "" == (r = $("#max-range").val()) ? n : r, o = n; o < parseInt(r) + 1; o++) {
+                switch (o) {
+                    case 5:
+                        case "5":
+                            var l = "100%";
+                            break;
+                    case 4:
+                        case "4":
+                            l = "75%";
+                            break;
+                    case 3:
+                        case "3":
+                            l = "50%";
+                            break;
+                    case 2:
+                        case "2":
+                            l = "25%";
+                            break;
+                    case 1:
+                        case "1":
+                            l = "0%"
                 }
-            })
+                i.find('.noUi-value[style="bottom: ' + l + ';"]').find(".fa").addClass("fa-star").removeClass("fa-star-o")
+            }
+        })
 
-            u.noUiSlider.on("update", function(e, t) {
-                var i = $("#rating-range");
-                i.find('.noUi-value[style="bottom: 100%;"]').html('<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>'),
-                i.find('.noUi-value[style="bottom: 75%;"]').html('<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>'),
-                i.find('.noUi-value[style="bottom: 50%;"]').html('<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>'),
-                i.find('.noUi-value[style="bottom: 25%;"]').html('<div class="rating"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>'),
-                i.find('.noUi-value[style="bottom: 0%;"]').html('<div class="rating"><i class="fa fa-star-o"></i></div>');
-                var a = e[t];
-                t ? $("#max-range").val(Math.round(a)).attr("value", Math.round(a)) : $("#min-range").val(Math.round(a)).attr("value", Math.round(a));
-                for (var n = $("#min-range").val(), r = "" == (r = $("#max-range").val()) ? n : r, o = n; o < parseInt(r) + 1; o++) {
-                    switch (o) {
-                        case 5:
-                            case "5":
-                                var l = "100%";
-                                break;
-                        case 4:
-                            case "4":
-                                l = "75%";
-                                break;
-                        case 3:
-                            case "3":
-                                l = "50%";
-                                break;
-                        case 2:
-                            case "2":
-                                l = "25%";
-                                break;
-                        case 1:
-                            case "1":
-                                l = "0%"
-                    }
-                    i.find('.noUi-value[style="bottom: ' + l + ';"]').find(".fa").addClass("fa-star").removeClass("fa-star-o")
-                }
-            })
+        $("#max-range").on("change", function() {
+            u.noUiSlider.set([null, this.value])
+        })
 
-            $("#max-range").on("change", function() {
-                u.noUiSlider.set([null, this.value])
-            })
-
-            $("#min-range").on("change", function() {
-                u.noUiSlider.set([this.value, null])
-            })
+        $("#min-range").on("change", function() {
+            u.noUiSlider.set([this.value, null])
+        })
     </script>
   
 </body>

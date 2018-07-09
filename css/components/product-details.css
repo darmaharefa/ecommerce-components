@@ -1,5 +1,5 @@
 .product-details {
-	padding: 10px;
+	padding: 0px 50px 0px 0px;
 }
 
 .product-filter {
@@ -15,6 +15,7 @@
 
 .product-title {
 	margin: 0px;
+	font-size: 20px;
 }
 
 .product-rating i {
@@ -42,6 +43,9 @@
 	border-top: 1px solid #dddddd;
 	padding-top: 10px;
 }
+	.color-details strong {
+		font-size: 14px;
+	}
 	.swatches {
 	    margin: 0.5em 0;
 	    padding-left: 0;
@@ -101,5 +105,5 @@
 .product-button button {
 	margin: 10px 0px;
 	padding: 4px;
-	font-size: 20px;
+	font-size: 16px;
 }
