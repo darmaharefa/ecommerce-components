@@ -1,0 +1,14 @@
+.iCheck-margin {
+  margin-right: 5px;
+}
+
+#customerCheckout label {
+  margin-right: 10px;
+}
+
+select[name="saved-address"]{
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

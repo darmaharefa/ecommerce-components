@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="plugins/icheck/skins/square/blue.css">
+        <link rel="stylesheet" href="css/components/header.css">
+        <link rel="stylesheet" href="css/components/footer.css">
+        <link rel="stylesheet" href="css/components/checkout.css">
+    </head>
+    <body>
+
+
+        <header>
+            <nav class="navbar navbar-light bg-main">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo/logo.png" height="35px" class="d-inline-block align-top" alt="">
+                </a>
+                <div class="navbar-search">
+                    <form action="">
+                        <div class="input-group">
+                        <div class="input-group-btn search-panel">
+                            <button type="button" class="btn btn-default btn-category dropdown-toggle" data-toggle="dropdown">
+                                <span id="search_concept">Kategori</span> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-category" role="menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-credit-card-alt" aria-hidden="true"></i>Promo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-mobile" style="font-size:25px;" aria-hidden="true"></i>Handphone
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-desktop" aria-hidden="true"></i>Computer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-camera-retro" aria-hidden="true"></i>Camera
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-trophy" aria-hidden="true"></i>Sport
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-cutlery" aria-hidden="true"></i>Food
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-industry" aria-hidden="true"></i>Industrial
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-motorcycle" aria-hidden="true"></i>Motorcycle
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <input type="hidden" name="search_param" value="all" id="search_param">         
+                        <input type="text" class="form-control product-search" name="product-search" placeholder="Search product or merchant">
+                        </div>
+                    </form>
+                </div>
+                <div class="navbar-cart">
+                    <a href="">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="navbar-auth">
+                    <button class="btn btn-outline-register" type="submit">Register</button>
+                    <button class="btn btn-outline-login" type="submit">Login</button>
+                </div>
+            </nav>
+        </header>
+        <!-- ./Header Navigation End -->
+
+        <div id="wrapper">
+            <div class="main-container">
+                <div class="container">
+                   
+                   <div class="row">
+                       <div class="onepage-checkout col-md-12">
+                           <div class="accordion" id="checkoutAccordion">
+                               <div class="card">
+                                   <div class="card-header" id="headerAddress">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#customerCheckout" area-expanded="true" aria-controls="customerCheckout">Customer Checkout</button>
+                                       </h5>
+                                   </div>
+                                   <div id="customerCheckout" class="collapse show" aria-labelledby="headerAddress" data-parent="#checkoutAccordion">
+                                       <div class="card-body">
+                                           <form action="" class="form-inline">
+                                                <label class="radio inline">
+                                                    <input id="existingAddress" type="radio" name="customer-address" value="1"> Use my existing Data address
+                                                </label>
+                                                <label class="radio inline">
+                                                    <input id="newAddress" type="radio" name="customer-address" value="2"> I want to assign new address
+                                                </label>
+                                           </form>
+                                           <hr>
+                                           <div id="existingAddressBox" class="collapse show">
+                                               <div class="form-group">
+                                                   <strong>Customer Address</strong>
+                                               </div>
+                                               <form action="">
+                                                   <div class="form-group">
+                                                       <label for="savedAddress"></label>
+                                                       <select name="saved-address" id="savedAddress">
+                                                           <option value="">Address 1</option>
+                                                           <option value="">Address 2</option>
+                                                           <option value="">Address 3</option>
+                                                           <option value="">Address 4</option>
+                                                           <option value="">Address 5</option>
+                                                       </select>
+                                                   </div>
+                                               </form>
+                                           </div>
+                                           <div id="newAddressBox" class="collapse">
+                                                <div class="form-group">
+                                                   <strong>New Customer Address</strong>
+                                               </div>
+                                                <form class="form d-flex">
+                                                    <div class="col-xs-12 col-sm-4">
+                                                        <div class="form-group required">
+                                                            <label for="addressName">Save Address As <sup>*</sup> </label>
+                                                            <input required="" type="text" class="form-control" id="addressName" placeholder="Address Name">
+                                                        </div>
+                                                        <div class="form-group required">
+                                                            <label for="addressName">Save Address As <sup>*</sup> </label>
+                                                            <input required="" type="text" class="form-control" id="addressName" placeholder="Address Name">
+                                                        </div>
+                                                        <div class="form-group required">
+                                                            <label for="addressName">Save Address As <sup>*</sup> </label>
+                                                            <input required="" type="text" class="form-control" id="addressName" placeholder="Address Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-4">
+                                                        <div class="form-group required">
+                                                            <label for="receiverName">Save Address As <sup>*</sup> </label>
+                                                            <input required="" type="text" class="form-control" id="receiverName" placeholder="Address Name">
+                                                        </div>
+                                                        <div class="form-group required">
+                                                            <label for="receiverName">Save Address As <sup>*</sup> </label>
+                                                            <input required="" type="text" class="form-control" id="receiverName" placeholder="Address Name">
+                                                        </div>
+                                                        <div class="form-group required">
+                                                            <label for="receiverName">Save Address As <sup>*</sup> </label>
+                                                            <input required="" type="text" class="form-control" id="receiverName" placeholder="Address Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-4">
+                                                        <div class="form-group required">
+                                                            <label for="receiverName">Save Address As <sup>*</sup> </label>
+                                                            <input required="" type="text" class="form-control" id="receiverName" placeholder="Address Name">
+                                                        </div>
+                                                        <div class="form-group required">
+                                                            <label for="receiverName">Save Address As <sup>*</sup> </label>
+                                                            <input required="" type="text" class="form-control" id="receiverName" placeholder="Address Name">
+                                                        </div>
+                                                        <div class="form-group required">
+                                                            <label for="receiverName">Save Address As <sup>*</sup> </label>
+                                                            <input required="" type="text" class="form-control" id="receiverName" placeholder="Address Name">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+
+                               <div class="card">
+                                   <div class="card-header" id="headerPayment">
+                                       <h5 class="mb-0">
+                                           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#customerPayment" area-expanded="true" aria-controls="customerPayment">Payment Method</button>
+                                       </h5>
+                                   </div>
+                                   <div id="customerPayment" class="collapse show" aria-labelledby="headerPayment" data-parent="#checkoutAccordion">
+                                       <div class="card-body">
+                                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eius voluptates atque odio quam exercitationem eos perspiciatis accusantium totam. Minima unde sapiente hic, aut reiciendis, rem dignissimos aliquid neque ipsum!
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>  
+                    
+                </div>
+            </div>
+        </div>
+        <!-- ./Wrapper End -->
+
+        <footer>
+            <div class="footer">
+                <div class="container f-link">     
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6>Royal Brew House</h6>
+                            <ul>
+                                <li><a href="">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h6>Customer Service</h6>
+                            <ul>
+                                <li><a href="">Help Center</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Report Abuse</a></li>
+                                <li><a href="">Terms and Condition</a></li>
+                                <li><a href="">Privacy Policies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h6>Shopping</h6>
+                            <ul>
+                                <li><a href="">How to Shop</a></li>
+                                <li><a href="">Payment method</a></li>
+                                <li><a href="">Cancelations and Refund</a></li>
+                                <li><a href="">Redeem Voucher</a></li>
+                                <li><a href="">Shipping Method</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <h6>Seller</h6>
+                            <ul>
+                                <li><a href="">How to Sell</a></li>
+                                <li><a href="">Advantage of Selling</a></li>
+                                <li><a href="">Selling Tips</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-1">
+                            <h6>Download</h6>
+                            <ul>
+                                <li>
+                                    <a class="f-link__apps" href="">
+                                        <img src="img/footer/google-play.png" alt="google-play">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="f-link__apps" href="">
+                                        <img src="img/footer/app-store.png" alt="app-store">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </footer>
+        <!-- ./Footer Navigation End -->
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="plugins/icheck/icheck.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('input').iCheck({
+                    radioClass: 'iradio_square-blue iCheck-margin'
+                });
+
+                $('input#newAddress').on('ifChanged', function (event) {
+                    $('#newAddressBox').collapse("show");
+                    $('#existingAddressBox').collapse("hide");
+                });
+
+                $('input#existingAddress').on('ifChanged', function (event) {
+                    $('#newAddressBox').collapse("hide");
+                    $('#existingAddressBox').collapse("show");
+                });
+
+            });
+        </script>
+    </body>
+</html>
