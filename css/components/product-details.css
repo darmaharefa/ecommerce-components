@@ -1,3 +1,28 @@
+.product-details {
+	padding: 10px;
+}
+
+.product-filter {
+	border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    clear: both;
+    display: block;
+}
+
+.product-status span{
+	padding: 5px 15px;
+}
+
+.product-title {
+	margin: 0px;
+}
+
+.product-rating i {
+      color: black;
+}
+	.product-rating span a {
+		font-size: 12px;
+	}
 
 .product-price {
 	font-size: 24px;
@@ -18,21 +43,24 @@
 	padding-top: 10px;
 }
 	.swatches {
-		margin: 0.5em 0;
-    	padding-left: 0;
+	    margin: 0.5em 0;
+	    padding-left: 0;
 	}
-	.swatches .selected, .swatches li:hover {
-		border : 1px solid #ddd;
-	}
+
 	.swatches li {
-		border: 2px solid #FFFFFF;
-    	display: inline-block;
-    	margin: 2px 1px;
-    	vertical-align: top;
-    	list-style: none;
+	    border: 2px solid #FFFFFF;
+	    display: inline-block;
+	    margin: 2px 1px;
+	    vertical-align: top;
+	    list-style: none;
 	}
+
+	.swatches .selected, .swatches li:hover {
+	    border: 2px solid #ddd;
+	}
+
 	.swatches a {
-		position: relative;
+	    position: relative;
 	    background-position: center center;
 	    background-repeat: no-repeat;
 	    border: 2px solid #FFFFFF;
@@ -44,7 +72,34 @@
 	    width: 33px;
 	}
 
+	.swatches a img {
+	    height: 29px;
+	    width: 29px;
+	}
 
-.rating-stars i {
-      color: black;
+	.swatches li a:after {
+	    content: "\f00c";
+	    font-family: fontawesome;
+	    font-size: 0;
+	    font-weight: lighter;
+	    color: #fff;
+	    transition: font-size 0.25s ease 0.1s;
+	    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+
+	}
+
+	.swatches .selected a:after {
+	    content: "\f00c";
+	    font-family: fontawesome;
+	    font-size: 100%;
+	    font-weight: lighter;
+	    color: #fff;
+	    transition: font-size 0.25s ease 0.1s;
+	    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+	}
+
+.product-button button {
+	margin: 10px 0px;
+	padding: 4px;
+	font-size: 20px;
 }

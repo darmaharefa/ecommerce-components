@@ -1,31 +1,38 @@
+.item {
+	padding-bottom: 10px;
+}
+
 .product-filter {
 	border-bottom: 1px solid #DDDDDD;
     border-top: 1px solid #DDDDDD;
-    clear: both;
-    display: block;
-    margin-bottom: 20px;
-    padding-bottom: 7px;
-    padding-top: 10px;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
 }
+	.product-filter-status {
+		width: 50%;
+	}
+	.product-filter-control {
+
+	}
+	.product-filter-control .change-view {
+		margin-right: 4px;
+	}
+	.product-filter-control .change-view .list-view {
+
+	}
 	.product-filter p {
-		display: block;
     	font-size: 14px;
-    	margin-top: 6px;
+    	margin: 0px;
 	}
 
-.change-view {
-	margin-right: 10px;
+.product-filter-control {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
-	.change-view a {
-		border: 1px solid #CCCCCC;
-	    display: inline-block;
-	    font-size: 18px;
-	    font-weight: normal;
-	    height: 34px;
-	    line-height: 23px;
-	    margin-left: 5px;
-	    overflow: hidden;
-	    padding: 5px 8px;
-	    border-radius: 3px;
-	}
+
+.product-filter-grid {
+	padding: 10px;
+}
