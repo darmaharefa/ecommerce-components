@@ -1,0 +1,50 @@
+.card-sidebar-default, .card-sidebar-profile {
+	margin-bottom: 4px;
+}
+
+.card-sidebar-default {
+	
+}
+	.card-sidebar-default ul {
+		padding: 10px 20px;
+	}
+	.card-sidebar-default ul li {
+		list-style-type: none;
+		padding: 2px 0px;
+	}
+	.card-sidebar-default ul li a {
+		color: black;
+	}
+
+.card-sidebar-profile {
+
+}
+	.card-sidebar-profile .card-profile {
+		display: flex;
+		align-content: center;
+		justify-content: space-between;
+	}
+	.card-sidebar-profile .card-profile-image{
+		width: 40%;
+		padding: 20px;
+	}
+	.card-sidebar-profile .card-profile-image img{
+		width: 100%;
+	}
+	.card-sidebar-profile .card-profile-info {
+		width: 60%;
+		padding: 10px;
+	}
+	.card-sidebar-profile .card-profile-info .profile-name{
+		font-size: 16px;
+		font-weight: bold;
+	}
+	.card-sidebar-profile .card-profile-info .profile-wallet-label{
+		padding-top: 4px;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	.card-sidebar-profile .card-profile-info .profile-wallet-value{
+		font-size: 18px;
+		line-height: 20px;
+	}
