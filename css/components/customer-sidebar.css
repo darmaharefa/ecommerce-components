@@ -36,7 +36,7 @@
 		padding: 20px 10px;
 	}
 	.card-sidebar-profile .card-profile-info .profile-name{
-		font-size: 14px;
+		font-size: 16px;
 		font-weight: bold;
 	}
 	.card-sidebar-profile .card-profile-info .profile-wallet-label{
@@ -45,7 +45,7 @@
 		color : #999;
 	}
 	.card-sidebar-profile .card-profile-info .profile-wallet-value{
-		font-size: 18px;
+		font-size: 14px;
 		line-height: 20px;
 		font-weight: bold;
 	}
