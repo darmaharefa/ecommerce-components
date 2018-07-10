@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/components/header.css">
+        <link rel="stylesheet" href="css/components/footer.css">
+        <link rel="stylesheet" href="css/components/seller-sidebar.css">
+        <link rel="stylesheet" href="css/components/dashboard-customer.css">
+        <link rel="stylesheet" href="css/components/product-description.css">
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar navbar-light bg-main">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo/logo.png" height="35px" class="d-inline-block align-top" alt="">
+                </a>
+                <div class="navbar-search">
+                    <form action="">
+                        <div class="input-group">
+                        <div class="input-group-btn search-panel">
+                            <button type="button" class="btn btn-default btn-category dropdown-toggle" data-toggle="dropdown">
+                                <span id="search_concept">Kategori</span> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-category" role="menu">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-credit-card-alt" aria-hidden="true"></i>Promo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-mobile" style="font-size:25px;" aria-hidden="true"></i>Handphone
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-desktop" aria-hidden="true"></i>Computer
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-camera-retro" aria-hidden="true"></i>Camera
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-trophy" aria-hidden="true"></i>Sport
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-cutlery" aria-hidden="true"></i>Food
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-industry" aria-hidden="true"></i>Industrial
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-motorcycle" aria-hidden="true"></i>Motorcycle
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <input type="hidden" name="search_param" value="all" id="search_param">         
+                        <input type="text" class="form-control product-search" name="product-search" placeholder="Search product or merchant">
+                        </div>
+                    </form>
+                </div>
+                <div class="navbar-cart">
+                    <a href="">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="navbar-auth">
+                    <button class="btn btn-outline-register" type="submit">Register</button>
+                    <button class="btn btn-outline-login" type="submit">Login</button>
+                </div>
+            </nav>
+        </header>
+        <!-- ./Header Navigation End -->
+        
+        <div id="wrapper">
+            <div class="main-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="customer-sidebar">
+                                <div class="card card-sidebar-profile">
+                                    <div class="card-content card-profile">
+                                        <div class="card-profile-image">
+                                            <img src="img/product/product-1.jpg" alt="">
+                                        </div>
+                                        <div class="card-profile-info">
+                                            <div class="profile-name">Adeline Rosabela</div>
+                                            <div class="profile-wallet">
+                                                <div class="profile-wallet-label">My Wallet</div>
+                                                <div class="profile-wallet-value">Rp. 1.000.000</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-sidebar-default">
+                                    <div class="card-header"><i class="fa fa-inbox"></i> Inbox</div>
+                                    <div class="card-content">
+                                        <ul>
+                                            <li><a href="">Chat</a></li>
+                                            <li><a href="">Review Product</a></li>
+                                            <li><a href="">Review Rating</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card card-sidebar-default">
+                                    <div class="card-header"><i class="fa fa-user"></i> My Profile</div>
+                                    <div class="card-content">
+                                        <ul>
+                                            <li><a href="">Change Profile</a></li>
+                                            <li><a href="">Withdraw Wallet</a></li>
+                                            <li><a href="">History</a></li>
+                                            <li><a href="">Settings</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card card-sidebar-default">
+                                    <div class="card-header"><i class="fa fa-list-alt"></i> Order List</div>
+                                    <div class="card-content">
+                                        <ul>
+                                            <li><a href="">Requested</a></li>
+                                            <li><a href="">Packed</a></li>
+                                            <li><a href="">Sent</a></li>
+                                            <li><a href="">Finished</a></li>
+                                            <li><a href="">Cancelled</a></li>
+                                            <li><a href="">Returned</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Customer Sidebar End -->
+
+                        <div class="col-lg-9 col-md-9">
+                            <div class="customer-content">
+                                <ul class="nav nav-tabs" id="tab-customer" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#packed" data-toggle="tab" aria-expanded="false">Packed</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#ready" data-toggle="tab" aria-expanded="false">Ready</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#sent" data-toggle="tab" aria-expanded="false">Sent</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#finished" data-toggle="tab" aria-expanded="false">Finished</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#cancelled" data-toggle="tab" aria-expanded="false">Cancelled</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#returned" data-toggle="tab" aria-expanded="false">Returned</a>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="packed">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="packed-card">
+                                                    <div class="packed-card-header">
+                                                        <div class="transaction-info">
+                                                            <h3><b>Purchase from</b></h3>
+                                                            <a href="">Seller Name</a>
+                                                            <p>Transaction date <strong>30 Jun 2018</strong>, Total Price : <strong>Rp. 30.000</strong></p>
+                                                            <div class="transaction-status">
+                                                                <div class="transaction-status-label">
+                                                                   <b>Transaction On Process</b>
+                                                                </div>
+                                                                <div class="transaction-status-icon">
+                                                                    <li class="transaction-status-item active"><i class="fa fa-shopping-cart"></i></li>
+                                                                    <li class="transaction-status-item active"><i class="fa fa-credit-card-alt"></i></li>
+                                                                    <li class="transaction-status-item active"><i class="fa fa-check-square"></i></li>
+                                                                    <li class="transaction-status-item active"><i class="fa fa-cube"></i></li>
+                                                                    <li class="transaction-status-item active"><i class="fa fa-thumbs-o-up"></i></li>
+                                                                    <li class="transaction-status-item"><i class="fa fa-truck"></i></li>
+                                                                    <li class="transaction-status-item"><i class="fa fa-dropbox"></i></li>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="transaction-button">
+                                                            <button class="btn btn-outline-default btn-sm btn-block" type="button" data-toggle="collapse" data-target="#packedCardBody"> <i class="fa fa-search"></i> Show Details </button>
+                                                        </div>
+                                                    </div>
+                                                    <div id="packedCardBody" class="packed-card-body collapse">
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="packed-body-left">
+                                                                    <h4><strong>Booking Number</strong></h4>
+                                                                    <p>INV/20180630/XVIII/1707123</p>
+
+                                                                    <h4><strong>Destination</strong></h4>
+                                                                    <p>Adeline Rosabela</p>
+                                                                    <p>Jln. Thamrin No 10, Medan</p>
+
+                                                                    <h4><strong>Product Purchased</strong></h4>
+                                                                    <div class="card-simple">
+                                                                        <div class="card-simple-header">
+                                                                            <img src="img/product/product-1.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="card-simple-body">
+                                                                            <p><b>Product Name</b></p>
+                                                                            <p>Qty : 10</p>
+                                                                            <p>Price : Rp 200.000</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-simple">
+                                                                        <div class="card-simple-header">
+                                                                            <img src="img/product/product-1.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="card-simple-body">
+                                                                            <p><b>Product Name</b></p>
+                                                                            <p>Qty : 10</p>
+                                                                            <p>Price : Rp 200.000</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-simple">
+                                                                        <div class="card-simple-header">
+                                                                            <img src="img/product/product-1.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="card-simple-body">
+                                                                            <p><b>Product Name</b></p>
+                                                                            <p>Qty : 10</p>
+                                                                            <p>Price : Rp 200.000</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr>
+                                                                    <h5 class="no-padding"><b>Delivery Fee</b> : Rp 100.000 </h5>
+                                                                    <h5 class="no-padding"><b>Dicount</b>: Rp 100.000</h5>
+                                                                    <h3 class="no-padding"><b>Total Price</b> : <strong class="text-success">Rp 2.000.000</strong></h3>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <div class="packed-body-right">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                    <div class="badge badge-primary">System</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                   <div class="badge badge-success">Customer</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                    <div class="badge badge-primary">System</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                    <div class="badge badge-warning">Seller</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                    <div class="badge badge-warning">Seller</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                   <div class="badge badge-primary">System</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                   <div class="badge badge-primary">System</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ./Packed Card End -->
+
+                                                <div class="packed-card">
+                                                    <div class="packed-card-header">
+                                                        <div class="transaction-info">
+                                                            <h3><b>Purchase from</b></h3>
+                                                            <a href="">Seller Name</a>
+                                                            <p>Transaction date <strong>30 Jun 2018</strong>, Total Price : <strong>Rp. 30.000</strong></p>
+                                                            <div class="transaction-status">
+                                                                <div class="transaction-status-label">
+                                                                   <b>Transaction On Process</b>
+                                                                </div>
+                                                                <div class="transaction-status-icon">
+                                                                    <li class="transaction-status-item active"><i class="fa fa-shopping-cart"></i></li>
+                                                                    <li class="transaction-status-item active"><i class="fa fa-credit-card-alt"></i></li>
+                                                                    <li class="transaction-status-item active"><i class="fa fa-check-square"></i></li>
+                                                                    <li class="transaction-status-item active"><i class="fa fa-cube"></i></li>
+                                                                    <li class="transaction-status-item active"><i class="fa fa-thumbs-o-up"></i></li>
+                                                                    <li class="transaction-status-item"><i class="fa fa-truck"></i></li>
+                                                                    <li class="transaction-status-item"><i class="fa fa-dropbox"></i></li>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="transaction-button">
+                                                            <button class="btn btn-outline-default btn-sm btn-block" type="button" data-toggle="collapse" data-target="#packedCardBody"> <i class="fa fa-search"></i> Show Details </button>
+                                                        </div>
+                                                    </div>
+                                                    <div id="packedCardBody" class="packed-card-body collapse">
+                                                        <hr>
+                                                        <div class="row">
+                                                            <div class="col-sm-4">
+                                                                <div class="packed-body-left">
+                                                                    <h4><strong>Booking Number</strong></h4>
+                                                                    <p>INV/20180630/XVIII/1707123</p>
+
+                                                                    <h4><strong>Destination</strong></h4>
+                                                                    <p>Adeline Rosabela</p>
+                                                                    <p>Jln. Thamrin No 10, Medan</p>
+
+                                                                    <h4><strong>Product Purchased</strong></h4>
+                                                                    <div class="card-simple">
+                                                                        <div class="card-simple-header">
+                                                                            <img src="img/product/product-1.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="card-simple-body">
+                                                                            <p><b>Product Name</b></p>
+                                                                            <p>Qty : 10</p>
+                                                                            <p>Price : Rp 200.000</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-simple">
+                                                                        <div class="card-simple-header">
+                                                                            <img src="img/product/product-1.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="card-simple-body">
+                                                                            <p><b>Product Name</b></p>
+                                                                            <p>Qty : 10</p>
+                                                                            <p>Price : Rp 200.000</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="card-simple">
+                                                                        <div class="card-simple-header">
+                                                                            <img src="img/product/product-1.jpg" alt="">
+                                                                        </div>
+                                                                        <div class="card-simple-body">
+                                                                            <p><b>Product Name</b></p>
+                                                                            <p>Qty : 10</p>
+                                                                            <p>Price : Rp 200.000</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr>
+                                                                    <h5 class="no-padding"><b>Delivery Fee</b> : Rp 100.000 </h5>
+                                                                    <h5 class="no-padding"><b>Dicount</b>: Rp 100.000</h5>
+                                                                    <h3 class="no-padding"><b>Total Price</b> : <strong class="text-success">Rp 2.000.000</strong></h3>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-8">
+                                                                <div class="packed-body-right">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                    <div class="badge badge-primary">System</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                   <div class="badge badge-success">Customer</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                    <div class="badge badge-primary">System</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                    <div class="badge badge-warning">Seller</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                    <div class="badge badge-warning">Seller</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                   <div class="badge badge-primary">System</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-sm-12">
+                                                                            <div class="card card-order">
+                                                                                <div class="card-header">
+                                                                                   <div class="badge badge-primary">System</div>
+                                                                                    <div class="text-secondary">02/07/2018 14:04</div>
+                                                                                </div>
+                                                                                <div class="card-body">
+                                                                                    <p>Doing Checkout Order Proses</p>
+                                                                                    <p>Waiting for payment Confirmation</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- ./Packed Card End <--></-->
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ./Customer Packed End -->
+                                    <div class="tab-pane fade" id="ready">Ready</div>
+                                    <!-- ./Customer Ready End -->
+                                    <div class="tab-pane fade" id="sent">Sent</div>
+                                    <!-- ./Customer Sent End -->
+                                    <div class="tab-pane fade" id="finished">Finished</div>
+                                    <!-- ./Customer Finished End -->
+                                    <div class="tab-pane fade" id="cancelled">Cancelled</div>
+                                    <!-- ./Customer Cancelled End -->
+                                    <div class="tab-pane fade" id="returned">Returned</div>
+                                    <!-- ./Customer Returned End -->
+                                </div>
+                                <!-- /.tab content -->
+                            </div>
+                        </div>   
+                        <!-- ./Customer Content End -->
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ./Wrapper End -->
+
+        <footer>
+            <div class="footer">
+                <div class="container f-link">     
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h6>Royal Brew House</h6>
+                            <ul>
+                                <li><a href="">About Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h6>Customer Service</h6>
+                            <ul>
+                                <li><a href="">Help Center</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Report Abuse</a></li>
+                                <li><a href="">Terms and Condition</a></li>
+                                <li><a href="">Privacy Policies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <h6>Shopping</h6>
+                            <ul>
+                                <li><a href="">How to Shop</a></li>
+                                <li><a href="">Payment method</a></li>
+                                <li><a href="">Cancelations and Refund</a></li>
+                                <li><a href="">Redeem Voucher</a></li>
+                                <li><a href="">Shipping Method</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2">
+                            <h6>Seller</h6>
+                            <ul>
+                                <li><a href="">How to Sell</a></li>
+                                <li><a href="">Advantage of Selling</a></li>
+                                <li><a href="">Selling Tips</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-1">
+                            <h6>Download</h6>
+                            <ul>
+                                <li>
+                                    <a class="f-link__apps" href="">
+                                        <img src="img/footer/google-play.png" alt="google-play">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="f-link__apps" href="">
+                                        <img src="img/footer/app-store.png" alt="app-store">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </footer>
+        <!-- ./Footer Navigation End -->
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
