@@ -12,3 +12,59 @@ select[name="saved-address"]{
   border: 1px solid #ddd;
   border-radius: 4px;
 }
+
+#checkoutAccordion{
+	
+}
+	#checkoutAccordion h5{
+		padding: 0px;
+	}
+
+	#checkoutAccordion h5 button{
+		padding: 0px;
+	}
+
+	#checkoutAccordion .card {
+		margin-bottom: 5px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+	}
+
+.product-information {
+	margin-top : 10px;
+}
+
+.checkout-mini-table {
+	border: 1px solid #DDDDDD;
+    padding: 10px;
+}
+	.checkout-mini-table tr td {
+		padding: 10px 0px;
+	}
+	.checkout-mini-table tr:first-child td{
+		border:0px;
+	}
+	.checkout-mini-table tr td:nth-child(2) {
+		text-align: right;
+	}
+
+#cart-summary .price {
+	font-size: 18px;
+    font-weight: bold;
+    color: #454545;
+}
+	#total-price {
+		font-size: 22px;
+    	font-weight: bold;
+	}
+	#promo-code input{
+		width: 80%;
+		padding: 10px 5px;
+		border-radius: 4px;
+		border: 1px solid rgba(0, 0, 0, 0.125);
+	}
+	#promo-code .input-group-append {
+		width: 20%;
+	}
+	#promo-code .input-group-append button{
+		width: 100%;
+	}

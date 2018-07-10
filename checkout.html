@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/components/header.css">
         <link rel="stylesheet" href="css/components/footer.css">
         <link rel="stylesheet" href="css/components/checkout.css">
+        <link rel="stylesheet" href="css/components/table-cart.css">
     </head>
     <body>
 
@@ -90,112 +91,287 @@
         <div id="wrapper">
             <div class="main-container">
                 <div class="container">
-                   
-                   <div class="row">
-                       <div class="onepage-checkout col-md-12">
-                           <div class="accordion" id="checkoutAccordion">
-                               <div class="card">
-                                   <div class="card-header" id="headerAddress">
-                                       <h5 class="mb-0">
-                                           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#customerCheckout" area-expanded="true" aria-controls="customerCheckout">Customer Checkout</button>
-                                       </h5>
-                                   </div>
-                                   <div id="customerCheckout" class="collapse show" aria-labelledby="headerAddress" data-parent="#checkoutAccordion">
-                                       <div class="card-body">
-                                           <form action="" class="form-inline">
-                                                <label class="radio inline">
-                                                    <input id="existingAddress" type="radio" name="customer-address" value="1"> Use my existing Data address
-                                                </label>
-                                                <label class="radio inline">
-                                                    <input id="newAddress" type="radio" name="customer-address" value="2"> I want to assign new address
-                                                </label>
-                                           </form>
-                                           <hr>
-                                           <div id="existingAddressBox" class="collapse show">
-                                               <div class="form-group">
-                                                   <strong>Customer Address</strong>
-                                               </div>
-                                               <form action="">
-                                                   <div class="form-group">
-                                                       <label for="savedAddress"></label>
-                                                       <select name="saved-address" id="savedAddress">
-                                                           <option value="">Address 1</option>
-                                                           <option value="">Address 2</option>
-                                                           <option value="">Address 3</option>
-                                                           <option value="">Address 4</option>
-                                                           <option value="">Address 5</option>
-                                                       </select>
-                                                   </div>
-                                               </form>
-                                           </div>
-                                           <div id="newAddressBox" class="collapse">
-                                                <div class="form-group">
-                                                   <strong>New Customer Address</strong>
-                                               </div>
-                                                <form class="form d-flex">
-                                                    <div class="col-xs-12 col-sm-4">
-                                                        <div class="form-group required">
-                                                            <label for="addressName">Save Address As <sup>*</sup> </label>
-                                                            <input required="" type="text" class="form-control" id="addressName" placeholder="Address Name">
-                                                        </div>
-                                                        <div class="form-group required">
-                                                            <label for="addressName">Save Address As <sup>*</sup> </label>
-                                                            <input required="" type="text" class="form-control" id="addressName" placeholder="Address Name">
-                                                        </div>
-                                                        <div class="form-group required">
-                                                            <label for="addressName">Save Address As <sup>*</sup> </label>
-                                                            <input required="" type="text" class="form-control" id="addressName" placeholder="Address Name">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-12 col-sm-4">
-                                                        <div class="form-group required">
-                                                            <label for="receiverName">Save Address As <sup>*</sup> </label>
-                                                            <input required="" type="text" class="form-control" id="receiverName" placeholder="Address Name">
-                                                        </div>
-                                                        <div class="form-group required">
-                                                            <label for="receiverName">Save Address As <sup>*</sup> </label>
-                                                            <input required="" type="text" class="form-control" id="receiverName" placeholder="Address Name">
-                                                        </div>
-                                                        <div class="form-group required">
-                                                            <label for="receiverName">Save Address As <sup>*</sup> </label>
-                                                            <input required="" type="text" class="form-control" id="receiverName" placeholder="Address Name">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xs-12 col-sm-4">
-                                                        <div class="form-group required">
-                                                            <label for="receiverName">Save Address As <sup>*</sup> </label>
-                                                            <input required="" type="text" class="form-control" id="receiverName" placeholder="Address Name">
-                                                        </div>
-                                                        <div class="form-group required">
-                                                            <label for="receiverName">Save Address As <sup>*</sup> </label>
-                                                            <input required="" type="text" class="form-control" id="receiverName" placeholder="Address Name">
-                                                        </div>
-                                                        <div class="form-group required">
-                                                            <label for="receiverName">Save Address As <sup>*</sup> </label>
-                                                            <input required="" type="text" class="form-control" id="receiverName" placeholder="Address Name">
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                           </div>
-                                       </div>
-                                   </div>
-                               </div>
 
-                               <div class="card">
-                                   <div class="card-header" id="headerPayment">
-                                       <h5 class="mb-0">
-                                           <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#customerPayment" area-expanded="true" aria-controls="customerPayment">Payment Method</button>
-                                       </h5>
-                                   </div>
-                                   <div id="customerPayment" class="collapse show" aria-labelledby="headerPayment" data-parent="#checkoutAccordion">
-                                       <div class="card-body">
-                                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum eius voluptates atque odio quam exercitationem eos perspiciatis accusantium totam. Minima unde sapiente hic, aut reiciendis, rem dignissimos aliquid neque ipsum!
-                                       </div>
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   </div>  
+                  <div class="row">
+                      <div class="col-lg-9 col-md-9 col-sm-7">
+                          <h1 class="section-title-inner"><span><i class="fa fa-shopping-cart"></i> ONEPAGE CHECKOUT</span></h1>
+                      </div>
+                      <div class="col-lg-3 col-md-3 col-sm-5 rightSidebar">
+                          <h4 class="caps"><a href=""><i class="fa fa-chevron-left"></i> Back to shopping </a></h4>
+                      </div>
+                  </div>
+                   
+                  <div class="row">
+                    <div class="onepage-checkout col-md-8">
+                         <div class="accordion" id="checkoutAccordion">
+                            <div class="card">
+                                 <div class="card-header" id="headerAddress">
+                                     <h5>
+                                         <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#customerCheckout" area-expanded="true" aria-controls="customerCheckout">Customer Checkout</button>
+                                     </h5>
+                                 </div>
+                                 <div id="customerCheckout" class="collapse show" aria-labelledby="headerAddress" data-parent="#checkoutAccordion">
+                                     <div class="card-body">
+                                         <form action="" class="form-inline">
+                                              <label class="radio inline">
+                                                  <input id="existingAddress" type="radio" name="customer-address" value="1"> Use my existing Data address
+                                              </label>
+                                              <label class="radio inline">
+                                                  <input id="newAddress" type="radio" name="customer-address" value="2"> I want to assign new address
+                                              </label>
+                                         </form>
+                                         <hr>
+                                         <div id="existingAddressBox" class="collapse show">
+                                             <div class="form-group">
+                                                 <strong>Customer Address</strong>
+                                             </div>
+                                             <form action="">
+                                                 <div class="form-group">
+                                                     <label for="savedAddress"></label>
+                                                     <select name="saved-address" id="savedAddress">
+                                                         <option value="">Address 1</option>
+                                                         <option value="">Address 2</option>
+                                                         <option value="">Address 3</option>
+                                                         <option value="">Address 4</option>
+                                                         <option value="">Address 5</option>
+                                                     </select>
+                                                 </div>
+                                             </form>
+                                         </div>
+                                         <div id="newAddressBox" class="collapse">
+                                              <div class="form-group">
+                                                 <strong>New Customer Address</strong>
+                                             </div>
+                                              <form class="form d-flex">
+                                                  <div class="col-xs-12 col-sm-6">
+                                                      <div class="form-group required">
+                                                          <label for="addressName">Save Address as <sup>*</sup> </label>
+                                                          <input required="" type="text" class="form-control" id="addressName" placeholder="My Address">
+                                                      </div>
+                                                      <div class="form-group required">
+                                                          <label for="receiverName">Receiver Name <sup>*</sup> </label>
+                                                          <input required="" type="text" class="form-control" id="receiverName" placeholder="Receiver Name">
+                                                      </div>
+                                                      <div class="form-group required">
+                                                          <label for="email">Email</label>
+                                                          <input required="" type="text" class="form-control" id="email" placeholder="Email">
+                                                      </div>
+                                                      <div class="form-group required">
+                                                          <label for="phone">Mobile Phone <sup>*</sup> </label>
+                                                          <input required="" type="text" class="form-control" id="phone">
+                                                      </div>
+                                                      <div class="form-group required">
+                                                          <label for="address">Address <sup>*</sup> </label>
+                                                          <input required="" type="text" class="form-control" id="address" placeholder="Address">
+                                                      </div>
+                                                  </div>
+                                                  <br>
+                                                  <div class="col-xs-12 col-sm-6">
+                                                      <div class="form-group required">
+                                                          <label for="city">City <sup>*</sup> </label>
+                                                          <input required="" type="text" class="form-control" id="city" placeholder="City">
+                                                      </div>
+                                                      <div class="form-group required">
+                                                        <label for="state">State <sup>*</sup> </label>
+                                                        <select class="form-control" required="" aria-required="true" id="state" name="InputState" tabindex="-1" aria-hidden="true">
+                                                            <option value="">Choose</option>
+                                                            <option value="1">Alabama</option>
+                                                            <option value="2">Alaska</option>
+                                                            <option value="3">Arizona</option>
+                                                        </select>
+                                                      </div>
+                                                      <div class="form-group required">
+                                                          <label for="postalcode">Zip / Postal Code <sup>*</sup> </label>
+                                                          <input required="" type="text" class="form-control" id="postalcode" placeholder="Address Name">
+                                                      </div>
+                                                      <div class="form-group">
+                                                          <label for="InputAdditionalInformation">Additional
+                                                              information</label>
+                                                          <textarea rows="3" cols="26" name="InputAdditionalInformation" class="form-control" id="InputAdditionalInformation"></textarea>
+                                                      </div>
+                                                  </div>
+                                              </form>
+                                         </div>
+                                     </div>
+                                 </div>
+                            </div>
+                            <!-- ./ Card Checkout Address -->
+
+                            <div class="card">
+                                 <div class="card-header" id="headerPayment">
+                                     <h5>
+                                         <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#customerPayment" area-expanded="true" aria-controls="customerPayment">Payment Method</button>
+                                     </h5>
+                                 </div>
+                                 <div id="customerPayment" class="collapse show" aria-labelledby="headerPayment" data-parent="#checkoutAccordion">
+                                     <div class="card-body">
+                                         Payment method is here <br>
+                                     </div>
+                                 </div>
+                            </div>
+                            <!-- ./ Card Checkout Payment -->
+
+                            <div class="card">
+                              <div class="card-header" id="headerProductDetails">
+                                  <h5>
+                                       <button class="btn btn-transparent" type="button" data-toggle="collapse" data-target="#customerProductDetails" area-expanded="true" aria-controls="customerProductDetails">Product Information</button>
+                                  </h5>
+                              </div>
+                              <div id="customerProductDetails" class="collapse show" aria-labelledby="headerProductDetails" data-parent="#checkoutAccordion">
+                                <div class="card-body">
+                                  <div class="table-responsive shopping-cart">
+                                      <table class="table">
+                                            <thead>
+                                                <tr>
+                                                  <th>Seller</th>
+                                                  <th class="text-center" style="width:40%">Product/Spesification</th>
+                                                  <th class="text-center" style="width:9%">Quantity</th>
+                                                  <th class="text-center">Price/Unit</th>
+                                                  <th class="text-center">Subtotal</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="seller-group">
+                                                    <td colspan="6">
+                                                        <div class="seller-name">
+                                                          Seller Store A
+                                                        </div>
+                                                    </td>
+                                                    <!-- /.seller-name -->
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <div class="product-item">
+                                                            <a class="product-thumb" href="shop-single.html">
+                                                                <img src="img/product-thumb/product-2.jpg" alt="Product">
+                                                            </a>
+                                                            <div class="product-info">
+                                                                <h4 class="product-title">
+                                                                    <a href="shop-single.html">Canon EOS 80D DLSR Digital Camera</a>
+                                                                </h4>
+                                                                <div class="product-sub-info">
+                                                                    <span>Type: DLSR</span>
+                                                                    <span class="pip-1">|</span>
+                                                                    <span>Color: Black</span>
+                                                                </div>
+                                                                <div class="product-stock-status">
+                                                                    <span class="badge badge-success">In stock</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- /.product-name -->
+                                                    <td class="text-center">
+                                                        <div class="checkout-final-qty">1</div>
+                                                    </td>
+                                                    <!-- /.product-quantity -->
+                                                    <td class="text-center text-lg">
+                                                        <div class="product-new-price">Rp 8.000.000</div>
+                                                        <div class="product-old-price">Rp 10.000.000</div>
+                                                    </td>
+                                                    <!-- /.product-price -->
+                                                    <td class="text-center text-lg">
+                                                        <div class="product-total-price">
+                                                            Rp 8.000.000
+                                                        </div>
+                                                    </td>
+                                                    <!-- /.product-sub-total -->
+                                                </tr>
+                                                <tr> 
+                                                    <td colspan="2">
+                                                        <div class="product-item"><a class="product-thumb" href=""><img src="img/product-thumb/product-1.jpg" alt="Product"></a>
+                                                          <div class="product-info">
+                                                            <h4 class="product-title">
+                                                                <a href="">White Fujifilm Instax Mini 8 Instant Camera</a>
+                                                            </h4>
+                                                            <div class="product-sub-info">
+                                                                <span class="product-color">Type: Polaroid</span>
+                                                                <span class="pip-1">|</span>
+                                                                <span class="product-type">Color: White</span>
+                                                            </div>
+                                                            <div class="product-stock-status">
+                                                                <span class="badge badge-success">In stock</span>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                    </td>
+                                                    <!-- /.product-name -->
+                                                    <td class="text-center">
+                                                        <div class="checkout-final-qty">1</div>
+                                                    </td>
+                                                    <!-- /.product-quantity -->
+                                                    <td class="text-center">
+                                                        <div class="product-new-price">Rp 8.000.000</div>
+                                                        <div class="product-old-price">Rp 8.000.000</div>
+                                                    </td>
+                                                    <!-- /.product-price -->
+                                                    <td class="text-center text-lg">
+                                                        <div class="product-total-price">
+                                                            Rp 8.000.000
+                                                        </div>
+                                                    </td>
+                                                    <!-- /.product-sub-total -->
+                                                </tr>
+                                            </tbody>
+                                      </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- ./Card Product Details -->
+                         </div>
+                    </div>
+                    <!-- ./ Onepage Checkout -->
+
+                    <div class="col-md-4">
+                      <div class="checkout-mini-table">
+                        <table id="cart-summary" class="table">
+                          <tbody>
+                              <tr>
+                                  <td>Total products</td>
+                                  <td class="price">Rp 2.000.000</td>
+                              </tr>
+                              <tr style="">
+                                  <td>Shipping</td>
+                                  <td class="price"><span class="color-success">Free shipping!</span></td>
+                              </tr>
+                              <tr class="cart-total-price ">
+                                  <td>Total (tax excl.)</td>
+                                  <td class="price">Rp 2.000.000</td>
+                              </tr>
+                              <tr>
+                                  <td>Total tax</td>
+                                  <td class="price" id="total-tax">Rp 10.000</td>
+                              </tr>
+                              <tr>
+                                  <td> Total</td>
+                                  <td class="color-green" id="total-price">Rp 5.160.051</td>
+                              </tr>
+                              <tr>
+                                <td colspan="2" class="text-center"><strong>PROMO CODE</strong></td>
+                              </tr>
+                              <tr>
+                                <td colspan="2" class="text-center" id="promo-code">
+                                  <div class="input-group">
+                                    <input type="text" placeholder="Use Promo Code">
+                                    <div class="input-group-append">
+                                      <button class="btn btn-outline-success" type="button"><i class="fa fa-ticket"></i></button>
+                                    </div>
+                                  </div>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="2">
+                                  <button class="btn btn-success btn-block">CHECKOUT <i class="fa fa-arrow-right"></i></button>
+                                </td>
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <!-- ./Checkout Final Price Table -->
+                  </div>
+                  
                     
                 </div>
             </div>
