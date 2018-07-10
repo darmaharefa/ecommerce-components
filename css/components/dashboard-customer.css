@@ -1,0 +1,114 @@
+.customer-content {
+	padding-left: 30px;
+}
+	.customer-content .tab-content {
+		padding: 10px;
+	}
+
+.packed-card {
+	margin-bottom: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	padding: 10px;
+}
+	.packed-card p, .packed-card h3 {
+		margin: 0px;
+		padding: 0px;
+	}
+
+.packed-card-header {
+	display: flex;
+}
+	.packed-card-header .transaction-info {
+		flex: 1
+	}
+	.packed-card-header .transaction-button {
+		padding: 10px;
+	}
+	.packed-card-header .transaction-info p {
+		padding-top: 15px;
+		padding-bottom: 4px;
+	}
+
+
+
+.transaction-status {
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	padding: 15px;
+	display: inline-block;
+}
+	.transaction-status .transaction-status-label {
+		padding-bottom: 20px;
+	}
+	.transaction-status .transaction-status-icon > li{
+		font-size: 24px;
+		display: inline-block;
+	}
+
+	.transaction-status .transaction-status-icon > li + li:before {
+	  padding: 0 5px;
+	  color: #ccc;
+	  content: "\f101";
+	  font-family: FontAwesome;
+	}
+	.transaction-status-icon > .active {
+	  color: #5cb85c;
+	}
+
+.packed-card-body {
+	padding: 10px;
+}
+	.packed-body-left {
+
+	}
+	.packed-body-left h4 {
+		padding: 15px 0px 5px 0px;
+	}
+	.packed-body-right{
+		padding: 0px 10px;
+		border-left: 1px solid rgba(0,0,0,0.125);
+	}
+
+.card-simple {
+	border: 1px solid rgba(0,0,0,0.125);
+	display: flex;
+	align-items: center;
+	padding: 10px;
+	margin: 5px 0px;
+}
+	.card-simple-header{
+		width: 30%;
+	}
+	.card-simple-header img{
+		width: 100%;
+	}
+	.card-simple-body {
+		padding-left: 20px;
+		flex: 1;
+	}
+
+.card-order{
+	border: 1px solid rgba(0,0,0,0.125);
+	margin-bottom: 5px;
+}
+	.card-order .card-header {
+		padding: 0px 10px;
+	}
+	.card-order .card-body {
+		padding: 5px 10px;
+	}
+	.card-order .card-body p {
+		font-size: 12px;
+	}
+	.card-order .card-body p:before {
+		content: '-';
+		padding-right: 5px;
+
+	}
+	.card-order .card-header .text-secondary {
+		font-size: 12px;
+		font-weight: 400;
+	}
+	.card-order .badge {
+		color: white;
+		font-size: 12px;
+	}
