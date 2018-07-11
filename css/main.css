@@ -86,7 +86,7 @@ h6 {
 /* =============================================================== */
 .card {
   border-radius: 0px;
-  border-top: 4px solid #1a004f;
+  /* border-top: 4px solid #1a004f; */
 }
 
   .card .card-header {

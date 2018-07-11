@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/components/header.css">
         <link rel="stylesheet" href="css/components/footer.css">
         <link rel="stylesheet" href="css/components/customer-sidebar.css">
-        <link rel="stylesheet" href="css/components/chat.css">
+        <link rel="stylesheet" href="css/components/account-settings.css">
     </head>
     <body>
         <header>
@@ -84,11 +84,25 @@
             </nav>
         </header>
         <!-- ./Header Navigation End -->
+        
         <div id="wrapper">
             <div class="main-container">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3">
+                        <div class="col-lg-12">
+                            <nav>
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="">Authentication</a></li>
+                                    <li class="breadcrumb-item active"><a href="">My Account</a></li>
+                                </ol>
+                                <!-- /.breadcrumb -->
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- left column -->
+                        <div class="col-lg-3 col-md-3 col-sm-12">
                             <div class="customer-sidebar">
                                 <div class="card card-sidebar-profile">
                                     <div class="card-content card-profile">
@@ -109,7 +123,6 @@
                                     <div class="card-content">
                                         <ul>
                                             <li><a href="">Chat</a></li>
-                                            <li><a href="">Upload Product</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -142,166 +155,47 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6">
-                            <div class="chatbox">
-                               
-                                
-                                    <div class="chatbox-history">
-                                        <div class="incoming-chat">
+                        <!-- /left column end -->
 
-                                            <div class="incoming-chat-img"><img src="img/reviews/user.jpg" alt=""></div>
-                                            <div class="received-chat">
-                                                <div class="received-chat-message">
-                                                    <p>Mikroskil Medan</p>
-                                                    <span class="time-date"> 11:01 AM    |    June 7</span>
-                                                </div>
-                                            </div>
-                                        
-                                            <div class="outgoing-chat">
-                                                <div class="send-chat-message">
-                                                    <p>Test Chat 1 2 3 di coba</p>
-                                                    <span class="time-date"> 11:01 AM    |    June 7</span>
-                                                </div>
-                                            </div>
+                        <!-- right column -->
+                        <div class="col-lg-9 col-md-9 col-sm-12">
+                            <div class="change-profile">
 
-                                            <div class="incoming-chat">
-                                                <div class="incoming-chat-img"> <img src="img/reviews/user.jpg" alt=""> </div>
-                                                <div class="received-chat">
-                                                    <div class="received-chat-message">
-                                                        <p>Test, 1 + 1 sama dengan 2</p>
-                                                        <span class="time-date"> 11:01 AM    |    Yesterday</span>
-                                                    </div>
+                                <h1 class="section-tittle-inner">
+                                    <span><i class="fa fa-unlock-alt"></i> My Account</span>
+                                </h1>
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12">
+                                        <h4>Welcome to your account. Here you can manage all of your personal information and orders.</h4>
+                                        <hr>
+                                        <ul class="change-profile row ">
+                                            <li class="col-lg-2 col-md-3 col-sm-3 col-xs-4" style="height: 126px;">
+                                                <div class="thumbnail">
+                                                    <a title="Personal information" href=""><i class="fa fa-cog"></i>Personal information</a>
                                                 </div>
-                                            </div>
-
-                                            <div class="outgoing-chat">
-                                                <div class="send-chat-message">
-                                                    <p>Lorem ipsum dolor</p>
-                                                    <span class="time-date"> 11:01 AM    |    Today</span>
+                                            </li>
+                                            <li class="col-lg-2 col-md-3 col-sm-3 col-xs-4" style="height: 126px;">
+                                                <div class="thumbnail">
+                                                    <a title="My addresses" href=""><i class="fa fa-map-marker"></i> My addresses</a>
                                                 </div>
-                                            </div>
-
-                                            <div class="incoming-chat">
-                                                <div class="incoming-chat-img"> <img src="img/reviews/user.jpg" alt=""> </div>
-                                                    <div class="received-chat">
-                                                        <div class="received-chat-message">
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo amet ex placeat beatae perspiciatis voluptates, voluptatum, porro vitae dolorum dignissimos veritatis quas eaque iusto eum iste unde voluptas nulla nesciunt.</p>
-                                                            <span class="time-date"> 11:01 AM    |    Today</span>
-                                                        </div>
-                                                    </div>
-                                            </div>
-                                                      
-                                            <div class="chatbox-control d-flex justify-content-between">
-                                                <div class="chatbox-control-input">
-                                                    <input type="text" class="write_msg" placeholder="Type a message" />
+                                            </li>
+                                            <li class="col-lg-2 col-md-3 col-sm-3 col-xs-4" style="height: 126px;">
+                                                <div class="thumbnail">
+                                                    <a title="Add  address" href=""> <i class="fa fa-edit"> </i> Add address</a>
                                                 </div>
-                                                <div class="chatbox-control-button">
-                                                    <button class="btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-                                                </div>
-                                            </div>
-                                                 
-                                            <div class="col-lg-4 col-md-4"></div>
-                                        </div>
+                                            </li>
+                                        </ul>
                                     </div>
-                               
-
+                                </div>
                             </div>
+                            <!-- /.change-profile -->
                         </div>
-                        <div class="col-lg-3 col-md-3">
-
-                            <div class="chatbox-recent">
-                                <div class="chatbox-recent-seacrh">
-                                    <div class="recent_heading">
-                                        <h5>Recent Chat</h5>
-                                    </div>
-                                    <div class="recent-search">
-                                        <div class="input-group mb-3">
-                                            <input type="text" name="recent-chat">
-                                            <div class="input-group-prepend">
-                                                <label class="input-group-text" for="inputGroupSelect01"><i class="fa fa-search"></i></label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="recent-list">
-                                        <a href="" class="chat-card active_chat">
-                                          <div class="chat-content d-flex justify-content-between">
-                                            <div class="chat-img"> <img src="img/reviews/user.jpg" alt="" width="100%"> </div>
-                                            <div class="chat-text">
-                                                <h5 class="d-flex justify-content-between">Darma Harefa<span class="chat-date">Jul 7</span></h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicci... </p>
-                                            </div>
-                                          </div>
-                                        </a>
-                                        <a href="" class="chat-card active_chat">
-                                          <div class="chat-content d-flex justify-content-between">
-                                            <div class="chat-img"> <img src="img/reviews/user.jpg" alt="" width="100%"> </div>
-                                            <div class="chat-text">
-                                                <h5 class="d-flex justify-content-between">Darma Harefa<span class="chat-date">Jul 7</span></h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicci... </p>
-                                            </div>
-                                          </div>
-                                        </a>
-                                        <a href="" class="chat-card active_chat">
-                                          <div class="chat-content d-flex justify-content-between">
-                                            <div class="chat-img"> <img src="img/reviews/user.jpg" alt="" width="100%"> </div>
-                                            <div class="chat-text">
-                                                <h5 class="d-flex justify-content-between">Darma Harefa<span class="chat-date">Jul 7</span></h5>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicci... </p>
-                                            </div>
-                                          </div>
-                                        </a>
-                                    </div>
-
-
-
-
-
-
-
-                            <!-- <div class="inbox_chat">
-                                <div class="chat-card active_chat">
-                                  <div class="chat-content">
-                                    <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                                    <div class="chat_ib">
-                                        <a href="">
-                                            <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                                            <p>Test, which is a new approach to have all solutions astrology under one roof.</p>
-                                        </a>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="chat-card">
-                                  <div class="chat-content">
-                                    <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                                    <div class="chat_ib">
-                                      <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                                      <p>Test, which is a new approach to have all solutions 
-                                        astrology under one roof.</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="chat-card">
-                                  <div class="chat-content">
-                                    <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
-                                    <div class="chat_ib">
-                                      <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                                      <p>Test, which is a new approach to have all solutions 
-                                        astrology under one roof.</p>
-                                    </div>
-                                  </div>
-                                </div>
-                                </div>
-                              </div>
-                            </div> -->
-
-                                </div>
-                            </div>
-                    </div>
+                        <!-- /right column end                         -->
+                    </div> 
                 </div>
             </div>
         </div>
-    </div>
+        </div>
         <!-- ./Wrapper End -->
 
 
@@ -365,6 +259,9 @@
         <!-- ./Footer Navigation End -->
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/bootstrap.js"></script>
-        
+        <script src="plugins/grid/grid.min.js"></script>
+        <script>
+            $('ul.account-settings > li').responsiveEqualHeightGrid();
+        </script>
     </body>
 </html>
